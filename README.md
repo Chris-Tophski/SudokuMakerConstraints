@@ -1,5 +1,5 @@
 # SudokuMakerConstraints
-This repository contains JavaScript snitteps for SudokuMaker constraints and components, as used in my puzzles.
+This repository contains JavaScript snitteps and codes for SudokuMaker constraints and components, as used in my puzzles.
 
 Purposes are documentation, example library and sharing. Feel free to use the code for your own puzzles.
 
@@ -8,6 +8,7 @@ Purposes are documentation, example library and sharing. Feel free to use the co
 * `functions`: JavaScript functions used in constraints or components
 * `puzzles`: complete puzzles with description of creation process, custom constraints, constraint components, solution and explanations
 * `concepts`: explanations of concepts regarding custom constraints or SudokuMaker custom constraint interface
+* `failures`: explanations of failed ideas
 
 ## Disclaimers
 
