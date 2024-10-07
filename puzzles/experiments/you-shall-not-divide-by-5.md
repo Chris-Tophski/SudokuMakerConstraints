@@ -82,26 +82,43 @@ const pheight = puzzle.spec.size.height;
 const rows = [ 0, 1, pwidth - 2, pwidth - 1 ];
 const cols = [ 0, 1, pheight - 2, pheight - 1 ];
 
+function deltaToCellIdWrapped(cell_id, delta)
+{
+  const cellCoords = helpers.cellIds.getCoordsFromId(cell_id);
+  const result = [
+    (cellCoords.x + delta[0]).mod(pwidth),
+    (cellCoords.y + delta[1]).mod(pwidth)
+  ]
+  return result[1] * pwidth + result[0];
+}
+
 for (const i of rows)
 {
   for (const j of cols)
   {
     const currCellId = i * pwidth + j;
+    //console.log(currCellId);
     var affectedCells = [
-      (currCellId - 2 * pwidth - 1).mod(pwidth),
-      (currCellId - 2 * pwidth + 1).mod(pwidth),
-      (currCellId - 1 * pwidth - 2).mod(pwidth),
-      (currCellId + 1 * pwidth - 2).mod(pwidth),
-      (currCellId - 1 * pwidth + 2).mod(pwidth),
-      (currCellId + 1 * pwidth + 2).mod(pwidth),
-      (currCellId + 2 * pwidth - 1).mod(pwidth),
-      (currCellId + 2 * pwidth + 1).mod(pwidth)
+      [ -1, -2 ],
+      [  1, -2 ],
+      [ -2, -1 ],
+      [ -2,  1 ],
+      [  2, -1 ],
+      [  2,  1 ],
+      [ -1,  2 ],
+      [  1,  2 ]
     ];
+    //console.log(affectedCells);
     for (const ac of affectedCells)
     {
-      const { acc, acr } = helpers.cellIds.getCoordsFromId(ac)
-      const name = 'Wrapped Antiknight R' + i + 'C' + j + ', R' + acr + 'C' + acc;
-      puzzle.addConstraintComponent(new DifferentDigitsComponent(name, [ currCellId, ac ]));
+      const acId = deltaToCellIdWrapped(currCellId, ac);
+      const acCoords = helpers.cellIds.getCoordsFromId(acId);
+      //console.log(acCoords);
+      const acc = acCoords.x;
+      const acr = acCoords.y;
+      const name = 'Wrapped Antiknight R' + (i + 1) + 'C' + (j + 1) + ', R' + (acCoords.y + 1) + 'C' + (acCoords.x + 1);
+      //console.log(name);
+      puzzle.addConstraintComponent(new DifferentDigitsComponent(name, [ currCellId, acId ]));
     }
   }
 }
