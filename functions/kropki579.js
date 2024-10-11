@@ -1,5 +1,5 @@
 /*
-This function determines if two cell IDs are in a 1:2 reatio or both from the set { 5, 7, 9 }.
+This function determines if the digits of two cells with given IDs are either in a 1:2 reatio or both from the set { 5, 7, 9 }.
 */
 function AreKropki579(cellId1, cellid2)
 {
