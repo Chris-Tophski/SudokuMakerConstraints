@@ -7,7 +7,7 @@ Even though it is a really great puzzle setting app, there are a few problems wi
 such that I found it quite tricky to get started, although the idea of the creator of the app on how to implement custom constraints is definitely very brilliant.
 Now, the app is explicitly not in a released state, so we cannot seriously blame anyone for that.
 Instead, I try to extract useful information from the videos, my experiments etc. and try to summarize them here in this repo
-in order to start a proper documentation somewhere.
+in order to start a proper documentation somewhere (if not for anyone else, at least for me).
 Just to reiterate: as of writing this, the web app is not released and may change (according to a note in the constraint maker of the web app itself) anytime,
 so anything here could get obsolete very quickly.
 
