@@ -358,10 +358,6 @@ for (const i of rows)
   * after `R8C8`: `1267`
 
 ### Variant 3
-#### Additional Constraints
-
-(TODO)
-
 #### Solution
 
     475 986 213
@@ -374,11 +370,125 @@ for (const i of rows)
     189 524 367
     754 863 129
 
+#### Variant 3a
+##### Additional Constraints
+
+* Black/white Quadruple Dots (negative): "A white dot in a corner of 4 cells indicates exactly one pair of digits, whose sum is divisible by 5. A black dot indicates 2 pairs of such digits around the dot. All dots are given."
+  * white dots:
+    * after `R0C0`
+    * after `R0C2`
+    * after `R0C4`
+    * after `R0C6`
+    * after `R0C9`
+    * after `R1C0`
+    * after `R1C2`
+    * after `R1C5`
+    * after `R1C6`
+    * after `R1C7`
+    * after `R1C8`
+    * after `R1C9`
+    * after `R2C0`
+    * after `R2C2`
+    * after `R2C3`
+    * after `R2C4`
+    * after `R2C8`
+    * after `R2C9`
+    * after `R3C1`
+    * after `R3C2`
+    * after `R3C3`
+    * after `R3C5`
+    * after `R3C6`
+    * after `R3C8`
+    * after `R4C0`
+    * after `R4C5`
+    * after `R4C6`
+    * after `R4C8`
+    * after `R4C9`
+    * after `R5C1`
+    * after `R5C7`
+    * after `R6C0`
+    * after `R6C1`
+    * after `R6C3`
+    * after `R6C4`
+    * after `R6C6`
+    * after `R6C8`
+    * after `R6C9`
+    * after `R7C0`
+    * after `R7C1`
+    * after `R7C2`
+    * after `R7C3`
+    * after `R7C9`
+    * after `R8C0`
+    * after `R8C1`
+    * after `R8C4`
+    * after `R8C6`
+    * after `R8C7`
+    * after `R8C8`
+    * after `R8C9`
+    * after `R0C0`
+    * after `R0C2`
+    * after `R0C4`
+    * after `R0C6`
+    * after `R0C9`
+  * black dots:
+    * after `R0C8`
+    * after `R1C1`
+    * after `R2C1`
+    * after `R4C4`
+    * after `R4C7`
+    * after `R5C2`
+    * after `R5C8`
+    * after `R7C8`
+    * after `R8C5`
+    * after `R9C8`
+
+#### Variant 3b
+##### Additional Constraints
+
+* Quadruples:
+  * after `R1C1`: `347`
+  * after `R1C4`: `489`
+  * after `R1C7`: `129`
+  * after `R2C2`: `268`
+  * after `R2C5`: `127`
+  * after `R2C8`: `568`
+  * after `R4C1`: `458`
+  * after `R4C4`: `236`
+  * after `R4C7`: `679`
+  * after `R5C2`: `137`
+  * after `R5C5`: `589`
+  * after `R5C8`: `124`
+  * after `R7C1`: `126`
+  * after `R7C4`: `157`
+  * after `R7C7`: `358`
+  * after `R8C2`: `459`
+  * after `R8C5`: `346`
+  * after `R8C8`: `279`
+
+#### Variant 3c
+##### Additional Constraints
+
+* Quadruples:
+  * after `R1C2`: `578`
+  * after `R1C5`: `268`
+  * after `R1C8`: `136`
+  * after `R2C1`: `239`
+  * after `R2C4`: `134`
+  * after `R2C7`: `459`
+  * after `R4C2`: `247`
+  * after `R4C5`: `138`
+  * after `R4C8`: `159`
+  * after `R5C1`: `356`
+  * after `R5C4`: `279`
+  * after `R5C7`: `468`
+  * after `R7C2`: `369`
+  * after `R7C5`: `479`
+  * after `R7C8`: `478`
+  * after `R8C1`: `157`
+  * after `R8C4`: `568`
+  * after `R8C7`: `123`
+
 ### Variant 4
-#### Additional Constraints
-
-(TODO)
-
 #### Solution
 
     263 481 795
@@ -391,3 +501,192 @@ for (const i of rows)
     854 362 179
     679 815 243
 
+#### Variant 4a
+##### Additional Constraints
+
+* Product cages: Digits in cells in a cage don't repeat and multiply to the value in the top left corner of the cage.
+  * `prod(R2C2:R2C3) = 8`
+  * `prod(R2C4:R2C5) = 18`
+  * `prod(R2C6:R2C7) = 42`
+  * `prod(R2C8:R3C8) = 3`
+  * `prod(R3C2:R4C2) = 27`
+  * `prod(R4C3:R4C4) = 6`
+  * `prod(R4C8:R5C8) = 10`
+  * `prod(R5C2:R6C2) = 8`
+  * `prod(R5C6:R5C7) = 27`
+  * `prod(R6C8:R7C8) = 48`
+  * `prod(R6C2:R7C2) = 5`
+  * `prod(R8C3:R8C4) = 12`
+  * `prod(R8C5:R8C6) = 12`
+  * `prod(R8C7:R8C8) = 7`
+
+#### Variant 4b
+##### Additional Constraints
+
+* Product cages: Digits in cells in a cage multiply to the value in the top left corner of the cage.
+  * `prod(R1C1:R2C1) = 10`
+  * `prod(R1C2:R1C3) = 18`
+  * `prod(R1C4:R1C5) = 32`
+  * `prod(R1C6:R1C7) = 7`
+  * `prod(R1C8:R1C9) = 45`
+  * `prod(R2C9:R3C9) = 8`
+  * `prod(R3C1:R4C1) = 36`
+  * `prod(R4C9:R5C9) = 7`
+  * `prod(R5C1:R6C1) = 7`
+  * `prod(R6C9:R7C9) = 48`
+  * `prod(R7C1:R8C1) = 24`
+  * `prod(R8C9:R9C9) = 27`
+  * `prod(R9C1:R9C2) = 42`
+  * `prod(R9C3:R9C4) = 72`
+  * `prod(R9C5:R9C6) = 5`
+  * `prod(R9C7:R9C8) = 8`
+
+#### Variant 4c
+##### Additional Constraints
+
+* Given digits:
+````
+... ... ...
+... ... ...
+... ... ...
+..6 ... ...
+... ... 3..
+... ... ...
+..2 ... ...
+... ... ...
+... ... ...
+````
+
+* Numbered rooms: Digits outside the grid must be placed `n` cells away in theat direction, where `n` is the digit placed in the first cell in that direction.
+  * top:
+    * `C2=2`
+    * `C5=6`
+  * left:
+    * `R4=7`
+    * `R5=3`
+    * `R7=2`
+    * `R9=5`
+  * right:
+    * `R4=6`
+    * `R6=7`
+    * `R7=1`
+  * bottom:
+    * `C1=9`
+    * `C2=9`
+    * `C3=3`
+    * `C6=9`
+    * `C9=8`
+
+#### Variant 4d
+##### Additional Constraints
+
+* Given digits:
+````
+... ... ...
+... ... ...
+.9. ... ...
+... 1.. ...
+... ..9 ...
+... ... .8.
+..2 ... ...
+... .6. ...
+... ... ...
+````
+
+* Numbered rooms: Digits outside the grid must be placed `n` cells away in theat direction, where `n` is the digit placed in the first cell in that direction.
+  * top:
+    * `C1=5`
+    * `C2=2`
+    * `C3=7`
+    * `C4=1`
+    * `C5=6`
+    * `C6=1`
+    * `C7=5`
+    * `C8=4`
+    * `C9=1`
+  * left:
+    * `R1=6`
+    * `R2=9`
+    * `R3=5`
+    * `R4=7`
+    * `R5=3`
+    * `R6=1`
+    * `R7=2`
+    * `R8=7`
+    * `R9=5`
+  * right:
+    * `R1=8`
+    * `R2=7`
+    * `R3=1`
+    * `R4=6`
+    * `R5=1`
+    * `R6=7`
+    * `R7=1`
+    * `R8=8`
+    * `R9=2`
+  * bottom:
+    * `C1=9`
+    * `C2=9`
+    * `C3=3`
+    * `C4=2`
+    * `C5=1`
+    * `C6=9`
+    * `C7=1`
+    * `C8=8`
+    * `C9=8`
+
+#### Variant 4e
+##### Additional Constraints
+
+* X-Sums
+  * top:
+    * `C1=7`
+    * `C3=11`
+    * `C5=44`
+    * `C7=42`
+  * left:
+    * `R1=8`
+    * `R5=39`
+    * `R7=6`
+    * `R8=36`
+    * `R9=36`
+  * right:
+    * `R3=3`
+    * `R4=33`
+    * `R7=42`
+    * `R9=9`
+  * bottom:
+    * `C4=41`
+    * `C7=3`
+
+#### Variant 4f
+##### Additional Constraints
+
+* X-Sums
+  * top:
+    * `C1=7`
+    * `C3=11`
+    * `C5=44`
+    * `C6=1`
+    * `C7=42`
+    * `C8=45`
+  * left:
+    * `R1=8`
+    * `R4=45`
+    * `R5=39`
+    * `R6=1`
+    * `R7=6`
+    * `R8=36`
+    * `R9=36`
+  * right:
+    * `R3=3`
+    * `R4=33`
+    * `R5=1`
+    * `R7=42`
+    * `R8=45`
+    * `R9=9`
+  * bottom:
+    * `C3=45`
+    * `C4=41`
+    * `C5=1`
+    * `C7=3`
