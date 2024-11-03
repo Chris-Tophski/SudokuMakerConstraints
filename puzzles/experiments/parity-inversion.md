@@ -345,3 +345,35 @@ function* update (instance, puzzle)
     561 324 879
     873 956 142
     294 781 536
+
+### Variant 2
+#### Grid setup
+
+    Symbols:
+    NNN NND BNN
+    NCN NNN NNN
+    NNC NCC NNN
+    NNN CNN NNN
+    NCN DNN NNN
+    NDN CNN NNN
+    CNN NNN DNN
+    NNC CNN NNN
+    NNN NNN NNN
+
+    Parity line:
+    R2C2 → R3C1 → R3C3 → R4C3 → R4C4 → R5C4 → R5C5 → R7C3 → R6C3 → R5C2
+    R6C3 → R6C2
+    R7C1 → R8C2 → R7C2 → R8C3 → R8C4 → R9C4 → R9C5 → R8C6 → R8C7 → R6C7 → R5C6 → R3C6 → R3C5 → R2C6 → R1C6 → R1C7 → R2C7 (→ R2C6)
+
+#### possible Solution
+
+    786 914 352
+    951 237 468
+    234 865 971
+    513 642 789
+    647 389 215
+    829 751 643
+    462 198 537
+    195 473 826
+    378 526 194
+
