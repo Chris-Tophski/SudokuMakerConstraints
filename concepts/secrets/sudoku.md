@@ -53,3 +53,7 @@ The following table contains
 | 15 | 1 | 120 | 1800 |
 | 16 | 0 | 120 | 1920 |
 | 16 | 1 | 136 | 2176 |
+
+## Secrets with negative values
+A variation of a regular Sudoku grid, but with values from -4 to +4, where the digits are the absolute value, has both a region sum as well as a grid sum of `0`.
+Similarly, this is also valid for any Sudoku-ish grid with an odd number of rows and columns, if the values include `0` as well as for an even number of rows and columns, if `0` is not included.
