@@ -19,5 +19,5 @@ for (var i = 0; i < last_index; i++)
     i,
     ((h - 1) - y) * w + ((w - 1) - x)
   ];
-  puzzle.addConstraintComponent(new XyzComponentTaking2Cells('sym180XYZ@r' + (y + 1) + 'c' + (x + 1), 10, sym_cells));
+  puzzle.addConstraintComponent(new XyzComponentTaking2Cells('sym180XYZ@r' + (y + 1) + 'c' + (x + 1), _SOMETHING_, sym_cells));
 }
