@@ -54,15 +54,43 @@ The cage total `m` may be a sum or a product. Digits in a cage may or may not re
 
 ## Preparation for a puzzle
 * Often, it may be helpful to prepare an overview of the combinations. Especially if the rules of the puzzle point towards solving equations, where you may need to divide.
-* Create operator tables, e. g. for addition mod 3:
+* Create operator tables, where the first operand is in the first column and the second operand in the first row. You could swap the order for commutative operators, but it is better to get used to a certain order for non-commutative operators.
+* Be diligent calculating modular values. Things may seem more obvious than they are, particularly when it comes to division tables or negative values. Keep in mind, there is no division available if `n` is not a prime number (it's actually more complex than this, but exponentials of primes etc. are ignored here). Also, division by zero must be avoided.
+* Operator tables for `n=2`:
+
+|+|0|1|
+|-|-|-|
+|0|0|1|
+|1|1|0|
+
+|-|0|1|
+|-|-|-|
+|0|0|1|
+|1|1|0|
+
+|*|0|1|
+|-|-|-|
+|0|0|0|
+|1|0|1|
+
+|/|0|1|
+|-|-|-|
+|0| |0|
+|1| |1|
+
+* Operator tables for `n=3`:
 
 |+|0|1|2|
 |-|-|-|-|
 |0|0|1|2|
-|1|1|2|3|
-|2|2|3|1|
+|1|1|2|0|
+|2|2|0|1|
 
-* Be diligent calculating modular values. Things may seem more obvious than they are, particularly when it comes to division tables or negative values. Keep in mind, there is no division available if `n` is not a prime number (it's actually more complex than this, but exponentials of primes etc. are ignored here). Here is an example for `n=3`:
+|-|0|1|2|
+|-|-|-|-|
+|0|0|2|1|
+|1|1|0|2|
+|2|2|1|0|
 
 |*|0|1|2|
 |-|-|-|-|
@@ -75,3 +103,80 @@ The cage total `m` may be a sum or a product. Digits in a cage may or may not re
 |0| |0|0|
 |1| |1|2|
 |2| |2|1|
+
+* Operator tables for `n=5`:
+
+|+|0|1|2|3|4|
+|-|-|-|-|-|-|
+|0|0|1|2|3|4|
+|1|1|2|3|4|0|
+|2|2|3|4|0|1|
+|3|3|4|0|1|2|
+|4|4|0|1|2|3|
+
+|-|0|1|2|3|4|
+|-|-|-|-|-|-|
+|0|0|4|3|2|1|
+|1|1|0|4|3|2|
+|2|2|1|0|4|3|
+|3|3|2|1|0|4|
+|4|4|3|2|1|0|
+
+|*|0|1|2|3|4|
+|-|-|-|-|-|-|
+|0|0|0|0|0|0|
+|1|0|1|2|3|4|
+|2|0|2|4|1|3|
+|3|0|3|1|4|2|
+|4|0|4|3|2|1|
+
+|/|0|1|2|3|4|
+|-|-|-|-|-|-|
+|0| |0|0|0|0|
+|1| |1|3|2|4|
+|2| |2|1|4|3|
+|3| |3|4|1|2|
+|4| |4|2|3|1|
+
+* Operator tables for `n=7`:
+
+|+|0|1|2|3|4|5|6|
+|-|-|-|-|-|-|-|-|
+|0|0|1|2|3|4|5|6|
+|1|1|2|3|4|5|6|0|
+|2|2|3|4|5|6|0|1|
+|3|3|4|5|6|0|1|2|
+|4|4|5|6|0|1|2|3|
+|5|5|6|0|1|2|3|4|
+|6|6|0|1|2|3|4|5|
+
+|-|0|1|2|3|4|5|6|
+|-|-|-|-|-|-|-|-|
+|0|0|6|5|4|3|2|1|
+|1|1|0|6|5|4|3|2|
+|2|2|1|0|6|5|4|3|
+|3|3|2|1|0|6|5|4|
+|4|4|3|2|1|0|6|5|
+|5|5|4|3|2|1|0|6|
+|6|6|5|4|3|2|1|0|
+
+|*|0|1|2|3|4|5|6|
+|-|-|-|-|-|-|-|-|
+|0|0|0|0|0|0|0|0|
+|1|0|1|2|3|4|5|6|
+|2|0|2|4|6|1|3|5|
+|3|0|3|6|2|5|1|4|
+|4|0|4|1|5|2|6|3|
+|5|0|5|3|1|6|4|2|
+|6|0|6|5|4|3|2|1|
+
+|/|0|1|2|3|4|5|6|
+|-|-|-|-|-|-|-|-|
+|0| |0|0|0|0|0|0|
+|1| |1|4|5|2|3|6|
+|2| |2|1|3|4|6|5|
+|3| |3|5|1|6|2|4|
+|4| |4|2|6|1|5|3|
+|5| |5|6|4|3|1|2|
+|6| |6|3|2|5|4|1|
+
