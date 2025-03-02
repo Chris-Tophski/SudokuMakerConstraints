@@ -3,6 +3,7 @@
 ## Eleanor of Aquitaine
 
 Rules:
+
 • Normal Sudoku rules apply.
 • Cells separated by a knight's move (in chess) cannot contain the same digit.
 • Orthogonally adjacent cells cannot contain consecutive digits.
