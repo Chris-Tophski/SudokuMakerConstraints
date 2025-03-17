@@ -52,6 +52,19 @@ The cage total `m` may be a sum or a product. Digits in a cage may or may not re
 ### `k=4`
 * From here on, there are lots of degrees of freedom, so there is no general rule. However, it may sometimes be useful to split parts of the cage into sets of cells, whose modular value is known.
 
+## Setup of digits
+* `n=5`, `k=3`: Modular sums have one of the following setups:
+  * `sum=0mod5`:
+    *  Either all digits are `5`
+    *  or there is a `5` together with a `1mod5` and a `4mod5`
+    *  or there is a `5` together with a `2mod5` and a `3mod5`
+    *  or there is one remaainder together with one different remainder twice,
+    *  but never 3 different remainders apart from `0mod5`.
+  *  otherwise:
+    *  Either there is a `5` together with some pair making up the remaainder
+    *  or there is only one remainder involved 3 times
+    *  or all remainders are different.
+
 ## Preparation for a puzzle
 * Often, it may be helpful to prepare an overview of the combinations. Especially if the rules of the puzzle point towards solving equations, where you may need to divide.
 * Create operator tables, where the first operand is in the first column and the second operand in the first row. You could swap the order for commutative operators, but it is better to get used to a certain order for non-commutative operators.
