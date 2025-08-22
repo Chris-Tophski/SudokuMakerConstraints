@@ -1,26 +1,4 @@
-# Antiknight, Antiking, Slow Thermo Experiment
-
-## Grid setup
-
-* standard 9x9 Sudoku
-* regular regions
-* digits `1` to `9`
-
-## Constraints
-
-* Antiknight
-* Antiking
-* slow thermometers
-  * `R3C4` → `R3C3` → `R4C2` → `R5C3` → `R4C3` → `R4C4` → `R5C4` → `R4C5` → `R5C6`
-
-## Solution
-
-    513 468 972
-    468 972 135
-    972 135 684
-    135 684 729
-    684 729 351
-    729 351 846
-    351 846 297
-    846 297 513
-    297 513 468
+# Antiknight, Antiking, Slow Thermo
+## Experiment 1
+* [SudokuMaker](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhtEHEYIAFtAIgAwqKiZ0AFQj1R6ANaZBAYwgw%2BOBJMBEBAAIAyowAmENYwA6OUwEEDmALQBpHJgDmohDQmLgjuHpg4Pg6mZmwQAO4mCqJoMBDo2ihsbOn4ANqgAG5wbIz8ZAC%2BNIXFpQREldUl-ADMDSBFTQQALG0dtfgAbL01-AAcw534AJwT-QDss-wATIvdq4Pr41XtIwQz2338Cwe7%2BCsnk-UX-a3XZev7jfPr50-8V28Et5-4FXcEQ3%2B%2BC2Px6QI%2BO0m30h-T%2BP0BPxBMP4YJ%2Bxx%2Br2Re3WCKxwPWqLx6LxmMO2KB0LJv3WEKpxKppNOjzxlNOcLxtNOSKphKpuKprMm7KpnMm3NOvNO-NOjMmzLpmwJOJeD3W9LZNPWgv6sv68tO6qFmopSqB0rF5QAunQdDh0AgoHBwggcvkQAgAJ70fiUNqe711OhQFA%2BbB2gi5Sg0KNRog0ONxpY0JNJmPR%2BMZxPJ7Np2OZ7MpmjNIslro0Mtlsg0KtV4t18sNyvV5v14sVhs15sDGjd7tzGj9-ujGjD4e9nsDydDkcz8d9qcz0eWv1e96Y-3vaEbr6UKMgdCxOIEB2lOhiFK6FAINCu3JLRNRpbD5rDpZTItR5rv5pxrpES3WvunocFwIA6LEUCSAAxFosFwYIYiYFoag4Cg6A5JQJDFiAABGjBsDhABKcCWJgjAYSQPRWuU5RAA)
+* [SudokuPad](https://sudokupad.app/1v03ltdczs)
