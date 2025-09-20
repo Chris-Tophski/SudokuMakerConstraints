@@ -16,3 +16,40 @@ An idea about nonconsecutive Sudokus without roping.
 
 ## Preview
 ![Preview](preview.png)
+
+## Intended solution path
+-	Start with quad clues:
+	-	identify candidates around quads,
+	-	between them
+	-	and in their respective boxes.
+-	Take care of nonconsecutive cells in boxes 1, 3, 7 and 9.
+-	Where is 7 in row 3?
+-	Take care of nonconsecutive cells in box 3.
+-	Where is 6 in column 7?
+-	Where is 7 in column 7?
+-	Where is 8 in column 7?
+-	Where is 4 in column 7?
+-	Take care of nonconsecutive cells in box 9.
+-	Where is 2 in box 7?
+-	Take care of nonconsecutive cells in box 1.
+-	Where is 4 in row 7?
+-	Where are 3 and 4 in boxes 1 and 7?
+-	Take care of nonconsecutive cells in box 7.
+-	Where are 3 and 4 in box 4?
+-	Where is 5 in box 5?
+-	Where is 8 around the quad between boxes 4, 5, 7, 8 and in box 2?
+-	Take care of nonconsecutive cells around that quad.
+-	Where is 4 in boxes 5 and 8?
+-	Where is 5 in row 5?
+-	Where is 9 in box 3?
+-	Where is 6 in column 1?
+-	Where is 8 in box 4?
+-	Take care of Quadruple in row 5.
+-	At this point box 4 is solved and boxes 1 and 7 consist only of naked singles and pairs.
+-	Take care of triple in box 5.
+-	Where is 2 in boxes 5 and 6?
+-	Take care of nonconsecutive cells in box 5.
+-	Complete column 6 and take core of nonconsecutive cells.
+-	After some Sudoku basics and cleanup there should be the solved boxes 1, 3, 4, 5, 6, 7 and 9.
+-	Complete boxes 2 and 8.
+
