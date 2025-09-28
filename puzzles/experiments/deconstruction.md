@@ -3,7 +3,7 @@
 Notes:
 * The digits `1` to `9` are used with empty gaps (no `0`).
 * Gaps with a `0` would make it easier to export to SudokuPad, but it was harder to have the solver find a solution without using `0` within the regions.
-* So the allowed digits are reverted back to standard Sudoku digits, but you have to use "Share" in SudokuMaker to export the puzzle.
+* So the allowed digits are reverted back to standard Sudoku digits, but you have to use "Share" in SudokuMaker, using the option "Use currently filled-in values as the solution anyway." to export the puzzle with a solution included.
 * The regions are needed for automatic solving and must be disabled before exporting.
 * There is a negative constraint for arrows. Without it, the puzzle is not unique.
 
