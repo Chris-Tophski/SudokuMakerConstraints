@@ -1,29 +1,5 @@
 # Overlapping regions
-## Rules
-* 8x8 Sudoku with digits from 0 to 7
-* each 2 orthogonally adjacent marked 2x2 blocks form a rectangular region of 8 cells
-* numbered rooms: digits outside the grid must be placed in the position determined by the first digit in the grid in that direction (`1` means the first cell).
+## Experiment 1
+* [SudokuMaker](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhtEHEYIAFtAIgAwqKiZ0AFQj1R6ANaZBAYwgw%2BOBJMBEBAAIAHAA8zJgMqMAJhDWMTAd0xiT9zAHMP6EzAoXRNKEwQIEwB2AB0cUxQ4LVETACYTaDEIH1w4NjYATxM4ewArJJQDE3goNRR7NIt0gCM2CC01AMhYYpMoFC0EOBwfRjY4KD6UP1wMsHMTLRR89DjTHEYYZrR6vohddHwvX38MkSx7FHDRK585BphGdAQTbZN6caWGzBxrq-oIFgENhfpcEGgYD9ds0imIrmBMBgXt4-C8fn8THdMN9fmJEMd%2BoMQSYABREaqJHABOGBRHPRbLNgAShIggQBXo-BAWieERggnc9jEBDMdBuvlEhnwopAkJwABETlLKHR4BZFaiCFE6EsVgQANqgABueUY-EoAF8aMbTfwACxWm1sM1ax0gE3O-hkN0el34VI%2B20EABsgc9BAAzGG-URo-wA9b3UH8KHE77%2BLG08mo1nw-gHbm-ZbC-wonGCN6SwRM06-Tna-xUw2CMXm-gy1X8JW2wm2wW292k3mOz3y-mx-WhzGx62p42x-25y2x4P067O02l-6xzWt5O1ymx729zuZwuV2OR1urwfdwfFwfjwfV9mx5uD7OD-vky%2B85-k%2B%2ByZ3smN7Jg%2ByYBgAujquDPFAcA-Ag6AGqA7KcgQqSUJQk5oV6lB2jqnrIfghrXnQEAiGgUiMhhC7kZRUDUfkkaXvR4KMTR46dgRIAUexTFsBWdG8QxAkhkebFUZxoF5kQkkccx0pvvJYn%2Bv%2BskqZxEbqXWmmKXaOmlnpgldoZBA8XxUmKcGZkpsZWq2SqIn8ZxZi2XJzlWSZRAAJwTvZ-p%2BZ22qeQpJkRkFPYBXakVbqkAVkLFj4BcGSVgQFZhpXmwYBT5wHDrlT7Jk5llhQQPngRpoWqT5v5FrlgFVaVNUyfV1WcT5ZgWtBIDPAUHBcNyEBtFAkgAMRYZN1AWm6uEYZNdBsFCxH6qRFghnQBTiYm63tpt22gLtMpbYeO0ivtXZukdF2LrtIUnbdG0gA9V1PSdg67Tlz3idBa3nd9p2Hf9J1XtdANdWde3g69dnQ5DX0gzDCMHSAu1kBdm67TxJ2Y%2BZF2g3jcNA12F0Q8TyNKb9xPYyKMMRqTMPxUTqMYfjjMY3THOQzTgMs-mF0fYTL2Q%2BjAOPbDwvkxdk6fRdx53XLMPHbRkPK-gMvA%2BZ3U0H9-oM5DHknWTfNOUbMOm%2BuxMW7zu2Gyju1Mzj7MA4Leti5z7vczdMM8xr-MA-LFaK-DwdSwDu6ywDs4K1HSsXdHmv4BHidQTrVtc%2BnLvm97Bs58Tjta5DBfq87J2B%2Brod8zz5c88n-snQnJOxyHsdUybeftwDfvW%2BXdvbkXlcOxddfF439PN9T8fa7rPfZ%2BHc8NzDfeN6P3U9X1A34KhoiYB0OAoOgxGUFQos6CN41TVhYBgCAM2JnN6uUKfjIrSqcnxfTRByUQKo%2BTQZjr3ZJvUAZ8JCEAmpfLCggIDX3QCgZUJBYyzQ5PwbSz89QkQ-jQAi6MiCf3il-GgP9AH9X4CA4aYCQAQMgdA2B8CWyILvqhFBkYn46hfgaHBNAcraiILggieCiGpBIcAoa59wGQKgeROhCCkH3xYY-dBbAVpEBykQXhopfI0FSNqVIOVUjo1SHaERZCxGUOoZfWhYA4GyKYSAB%2BaD2EYP1EQTRf9MLaPfu40UOjtHBhMYNUBo0JGSKsTYhhcjmHoUUU45RBoPGpHfvFVI9MIxyW0to7xASt5mOCVQyR1BpHWPofgY%2BkT7EKMcdyDhJEIwf1SQRCM6M7T0ztPFO0ckDLZPIeI-JoSinhNKYw5B0Sqm6jibUxp6MIw5QjNqO0zSCItOwcIugG9TFBIvv03iMiIl2IcWw6pziZk0Dmac0UEVsHzJygs7Bxi1lAI2RQvJFipphJKWU-ZlTDnjJWnaUUMUaBkBVGQOSiUgWijINqMg-iHmkMCc8rZNCBkfOGfI0ZPyan6mBUCsF8UyD02DHJGyQK-5kAAXC0RmyQnIp2cU2xIzUGYucWQfF9MyA4PRsGQl8UiXcMoN03JSLLEooZeiplSjX7-yIfogiBiiHaj-kQQV1K%2Bm0pgfSvZjLWGSoNKo7RjT2kqg6ac%2Bm8r1EqsRTSkVdLBmfO1TEo5Ez9R1OwcayFOUoXYL-iaiMEZLW9NeZNd5YqokStiStAhb8fH6N4Uq9JAbzEFJDVq8VOqI16pjacpZ7TUmGLjYml5ybRWprDemp1K0Iw5qBSCyFZLOl5sLcKt5JahnlIObqkiAjkkqlSD49x392VNutS221qL23fM7fqBJFyblLOmbogdw61U2o1XatFZbHW-INCcu0ODeUqj5QS7BC7l1BqkWO0NFSMVTrUXKj%2BKo0naM-ujKIZ7i2XtLde8NFb4kPvOdgm52pLlPpSe%2B7Za7x1fJvRm2pALPUEWDLy9lzTgM%2BXA%2Bq3ZbaZqQRmkAA)
+* [SudokuPad](https://sudokupad.app/5jqbi0jxkx)
 
-## Grid setup
-* 8x8 grid with digits from 0 to 7
-* remove standard regions and make sure, rows and columns are restricted to be unique
-* cosmetic lines: snap to corners only, thickness 5, black
-  * draw outline of the grid
-  * draw horizontal and vertical lines, such that there are four 2x2 blocks horizontally and vertically
-* add additional regions, such that each two orthogonally adjacent 2x2 blocks are contained within a region (24 regions total)
-* add numbered rooms constraint:
-  * top: `_7474421`
-  * left: `_6137460`
-  * right: `137222_4`
-  * bottom: `67_01010`
-
-## Solution
-
-    04 75 26 31
-    26 13 40 75
-    13 60 75 24
-    57 24 31 06
-    40 57 62 13
-    62 31 04 57
-    71 42 53 60
-    35 06 17 42
