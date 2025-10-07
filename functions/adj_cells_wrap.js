@@ -7,11 +7,13 @@ Get orthogonally adjacent cells with wrap-around:
 */
 function getOrthogonallyAdjacentCellsWithWrapAround(cellId)
 {
-  var center_coords = helpers.cellIds.getCoordsFromId(cellId);
-  var top_id = (cell_coords.y - 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + cell_coords.x.mod(puzzle.spec.size.width);
-  var left_id = cell_coords.y.mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x - 1).mod(puzzle.spec.size.width);
-  var right_id = cell_coords.y.mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x + 1).mod(puzzle.spec.size.width);
-  var bottom_id = (cell_coords.y + 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + cell_coords.x.mod(puzzle.spec.size.width);
+  const w = puzzle.spec.size.width;
+  const h = puzzle.spec.size.height;
+  const center_coords = helpers.cellIds.getCoordsFromId(cellId);
+  const top_id = (center_coords.y - 1).mod(h) * h + center_coords.x.mod(w);
+  const left_id = center_coords.y.mod(h) * h + (center_coords.x - 1).mod(w);
+  const right_id = center_coords.y.mod(h) * h + (center_coords.x + 1).mod(w);
+  const bottom_id = (center_coords.y + 1).mod(h) * h + center_coords.x.mod(w);
 
   return [
     top_id,
@@ -26,11 +28,13 @@ Get diagonally adjacent cells with wrap-around:
 */
 function getDiagonallyAdjacentCellsWithWrapAround(cellId)
 {
-  var center_coords = helpers.cellIds.getCoordsFromId(cellId);
-  var tl_id = (cell_coords.y - 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x - 1).mod(puzzle.spec.size.width);
-  var tr_id = (cell_coords.y - 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x + 1).mod(puzzle.spec.size.width);
-  var bl_id = (cell_coords.y + 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x - 1).mod(puzzle.spec.size.width);
-  var br_id = (cell_coords.y + 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x + 1).mod(puzzle.spec.size.width);
+  const w = puzzle.spec.size.width;
+  const h = puzzle.spec.size.height;
+  const center_coords = helpers.cellIds.getCoordsFromId(cellId);
+  const tl_id = (center_coords.y - 1).mod(h) * h + (center_coords.x - 1).mod(w);
+  const tr_id = (center_coords.y - 1).mod(h) * h + (center_coords.x + 1).mod(w);
+  const bl_id = (center_coords.y + 1).mod(h) * h + (center_coords.x - 1).mod(w);
+  const br_id = (center_coords.y + 1).mod(h) * h + (center_coords.x + 1).mod(w);
 
   return [
     tl_id,
@@ -45,15 +49,17 @@ Get surrounding cells with wrap-around:
 */
 function getSurroundingCellsWithWrapAround(cellId)
 {
-  var center_coords = helpers.cellIds.getCoordsFromId(cellId);
-  var tl_id = (cell_coords.y - 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x - 1).mod(puzzle.spec.size.width;)
-  var top_id = (cell_coords.y - 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + cell_coords.x.mod(puzzle.spec.size.width);
-  var tr_id = (cell_coords.y - 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x + 1).mod(puzzle.spec.size.width);
-  var left_id = cell_coords.y.mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x - 1).mod(puzzle.spec.size.width);
-  var right_id = cell_coords.y.mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x + 1).mod(puzzle.spec.size.width);
-  var bl_id = (cell_coords.y + 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x - 1).mod(puzzle.spec.size.width);
-  var bottom_id = (cell_coords.y + 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + cell_coords.x.mod(puzzle.spec.size.width);
-  var br_id = (cell_coords.y + 1).mod(puzzle.spec.size.height) * puzzle.spec.size.height + (cell_coords.x + 1).mod(puzzle.spec.size.width);
+  const w = puzzle.spec.size.width;
+  const h = puzzle.spec.size.height;
+  const center_coords = helpers.cellIds.getCoordsFromId(cellId);
+  const tl_id = (center_coords.y - 1).mod(h) * h + (center_coords.x - 1).mod(w);
+  const top_id = (center_coords.y - 1).mod(h) * h + center_coords.x.mod(w);
+  const tr_id = (center_coords.y - 1).mod(h) * h + (center_coords.x + 1).mod(w);
+  const left_id = center_coords.y.mod(h) * h + (center_coords.x - 1).mod(w);
+  const right_id = center_coords.y.mod(h) * h + (center_coords.x + 1).mod(w);
+  const bl_id = (center_coords.y + 1).mod(h) * h + (center_coords.x - 1).mod(w);
+  const bottom_id = (center_coords.y + 1).mod(h) * h + center_coords.x.mod(w);
+  const br_id = (center_coords.y + 1).mod(h) * h + (center_coords.x + 1).mod(w);
 
   return [
     tl_id,
