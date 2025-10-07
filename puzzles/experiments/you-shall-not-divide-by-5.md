@@ -4,94 +4,25 @@
 * Custom constraint ["Orthogonally Adjacent not 0 mod 5 with wraparound"](/functions/orth_adj_not_0mod5_wrap.js)
 * Custom constraint ["Wrapped Antiknight"](/functions/antiknight_wrap.js)
 
-## Variants
-### Variant 1
+## Experiments
+### Experiment 1
 * [SudokuMaker](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhATQiMABOgAWcNmxE4ICEQBNMAN0yKUIgEYBPEWVog4jBOOgEQAYXFRM6ACoR649AGtMhgMYQYfHAgtAIgIRADloeBkAZUZFCFdRKEYOdBE4eno2HRIAHRxggBFMAHNMBBTMHBFoUwgi3ClM1MUAKzhPFH8RdukU2Nl5MUYYEQQIVJEVKUZNZTUsLQ5tPQpc4PtxTSLbRREAdyg0lLgoYRxFGkHPcRHJBW62csrTTVH6ERPd1KhNarM6nmkejgLTaHQUoxumnuj0h2nko2GH1SZy6KB6IgqsI4YDuEDYQyeY2eqPRmOJtiK4lx%2BJgOByeREAEdGMD0F40Q8CABtUCTfH8ADMAF8aLypvwAGwisX8ggAdmlID50wIABZFcr%2BAAmDXiggATl1svwAA4jSr8ERzfwyNaCGbRUq9Za7fhbY7NfLXVKPc7hb7jeqAxadcH%2BIawwbXaGZRag7Gba6rZHTa7-QmCD6M-gFSmY07jRHs%2BmCxbk9mHdn46XEync9mszXM67602XSmS578EW2%2B7s-mu9Wu5Xe66h86R13G13W12B86e13O87y23x8bl8bpxPXX226uZ67F8758bZ8693Oj2nvUnXZPneuy-fr3mxy3bynL36hQBdOjeDg6AIAcFRlNyoAIDo9D8JQipQTBBBEHQ3wlLgbL4FylA0Nh2HIfhNBaoRxG4ThNAEchRFUWRpEUcR1ECjQjGMaqNCsaxZA0JxnHMUxbH8RxXFCbxLECUJ3E0BKknSXKNCybJJo0IpilSapcnqQpSlaWpUnyepylKb%2Bio8HwFgAPJQDU-wNHoACCILtJ0cgKJQIgwBAOxkHspTXPsaTHKciiGAh-BEJQ4V0BoYAVKU2B4Pg3C8PwIAWVZ9SAiI9mtI5CjOSIrnuZ53mmHsBz0AFjBnIYFRMAEmH-iAWhtK4HRBQlIAhRY3gaF4HnJZMUCyCgRQAProEMKQALwiFynEiGFFxEGQv4ANy5LkkCDQAFANGIiNNlArXtAA8IhMKwHAkOgMGeCQyglAglinAgR2YAA1G9ACUuTALkIgiJtIg7ccIjNPt%2BVHWDp3newKBXTdd3FKUT2VS9oMfd9lQiL9WP-btniMFA3ydNNmAiAAVCI%2BoiG9oNrbjEwgxAcAjdC4Mw5dRQoI9HLoKlfzpZkWWgv4jhPdAijoFtzQXJgn30-9-2A8Dg3M54VRgFULPQpjivY39etnSwsMkMCihPUBIFwGBT0wPQuBgltOAoJ8ITDYgqgoNEMC2-bzv%2BFtADkQFQIHb3NG9geeGHmAXM7o3jTA6AXFyBNE2CFxq7%2Bn3ywb-1CgbBc4EXuQc3DZsW8BoH%2BL7DsB87rvuwgnve7X-sIEHQG7CzryB3Hw1jRNKfYSIJrZ7nOBl6bijm%2BhVs2z4fuOw3oRNy3Qxt47wfoN3I3YggfdDQnQ8zSPJrk-q4-01PFdz9Xj2L3XHcr27RQeyoXsb4-7edzvLMUlSQ%2B8dB5JxTopUeF83pjxztfY2l1b6W3vpveuLtV5v2bh-Vu38t5dxZloeEPggED0TsnGa599QXHIVAq%2B60cDK12mTaaRBXoiGhnAuG10UC3XusjZ6IgAC081XoYx%2BgbG%2BM9K7zxrtglBjd0Hrx9jIju29d6hzerHI%2BIDSFckwBfWWkDoET3%2BuI2eiDrbSLtk-J2qDX7v0-ooyxP8VHaxjv3Y%2BoCZoaKoZgGhxdcggBFCAbwjiwQYS5EZOgNUTBcECcBHQHAYnwWgoKSgjEgn8jCaAbwUBnZQAIAKNJPDwKYWQqJZaipsm5MzFJEARSwmUXUpfCp0Aqn4FVJxWpSNilckEopJpjpKloAIGQVinSHphMYrpGg-SsktKGW0xSYzShhNYlMsezScnzLIMhJZ3TBK6QibMzZeTLQdLqdyIikzpmHKCXMk5JpRnnMwpc-iTSGpxISe1LAOAigcAADIVH4GAKQ6AUBCj-OCoAA)
 * [SudokuPad](https://sudokupad.app/poug0ax196)
 
-### Variant 2
-#### Additional Constraints
-
-* Antiknight
-* Custom constraint "Wrapped Antiknight"
-
-#### Solution
-
-    152 634 897
-    897 152 634
-    634 897 152
-    263 489 715
-    489 715 263
-    715 263 489
-    971 526 348
-    348 971 526
-    526 348 971
-
-### Variant 2a
-#### Additional Constraints
-
-* Given digits:
-````
-... .3. ...
-... 1.. ...
-... ... .5.
-..3 ... ...
-... ..5 2..
-.1. ... 4..
-... .2. ...
-... ... ...
-... .4. ...
-````
-
+### Experiment 2
+#### Experiment 2a
 * [SudokuMaker](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhATQiMABOgAWcNmxE4ICEQBNMAN0yKUIgEYBPEWVog4jBOOgEQAYXFRM6ACoR649AGtMhgMYQYfHAgtAIgIRAGVGRQhXRgAdHGCAeShTCABzXCk2PThFACs4TxR-WXkRShEYCEV9WOCAQX9MAFpXHEwU8QUAd0xTEU6oOHo4KGEcRS8UaXQCAG1QFSlGfiIAXxp5xf4yNY22JYIAJh2QBb3%2BADZjlNVCggQoJbpT-fwAZmPn-gAWD82CAA5fmcCABOIEvADs4P4gPWJz%2B%2BDBcM%2BBChcOuKlu%2BHuj3hwPwq2RCO2RPxR1JL0uFP472pBB%2BdPwVN2L1pLO%2B0IBnMR3LR7IIhNAGKxOJQT2J3PJ-PwUrxlKuNzw2IeYrlNO5DOlsOlSOlfLVAu5JOlmoN%2BG1Zt1Zv1KIJCsxStF4vxxpAwsdKudL1ltuZZrZ1vtIs9ZsFZtdtp9CL9toD7ruIdtpttFttVrTvO5Ydtrvjytxke5MYRAaT3NTJY15e56YRNoR2YljKj%2BOLLslRe5ccVCYLCOTCIr%2BNr%2BPr%2BNWAF06N4cOh7nBMP5pvg5iAEDp6PxKMd15uBXQoChrrhlzNKDRz%2BeiDRr9eDjR7-fLxeb6%2B7w%2BP8%2Br2%2BP4%2BaK9-0Ar4aGA4CyBocDwIA6CQNgsCIIQmCANA2DIIQ84aAwjCIRoHCcP%2BGgCIIrDMNwsj8MIyiSOw8jKKIicdw3ZZKBYugNDARcemwJVuF4fgQH6QZNyqOAGhaNoOkMRcmACFcpxALR8lcQpxnwUBd347wNC8Sp%2BIAOUYGAtDQEh6BGBB5CYkgKiqABeEQwEYHBPAQbiRAAChwABKERgFiEQRGiEBGHQTQ51sFygoAbn8kRDwQRgoBwDz3NMOwRAAUlkHyAGpssy2QYpwFYitiGc5xEehukUXp7KYVgOBIdBN08JrMGYFASGq0wivKhRnBQCSFDqlh2E65qUFarAOpIcRBvaBBSuck8FBGTp0BEeyZlKGgRGvSruvEERGhEe8DvUXoTqIEQJ16laRG8NgNq2na9t2gahuO073rmz6rpupbHOc1zcCUSYEDgRxLEmNgAElFAAdQGehhPcgppAAfXUXaNDYCGvNiPzkoe%2B70bYSwIGgRRnpEOa2E3DASDJ%2BH0BIFIUAQCmqfQAAxEYYHhtGYaxxQvKKgK%2BrilB0EYPHNpEGZYoCoXpC5qBqZIAAPEQ8txiGzwnLzrMqdyqou8QvJoJWPLJtWNb0XXwbgGYiEN43FFNw6CeJidYvixLksPGW8ZdicRAAKnOmqjryoPZYQA2ipWWJYkgKAbfuzARAgMA4ogdbvaJgK04z2cFBybPc8e9BvYCouApJsuHsSqBoekeH5azyOzejnWRBycWG4AeiH8qIEathUjRlu27h0XB4ChZ07gMAwEmhAUEUWeacV4mG4V479saA4bqtveG%2B2t7jpPqdrYC7bj92xprtv8-7%2Bv3a9tPu%2BD%2B%2Bw-v7fr-M6X9X773fs-T%2BN8z5gN-vtU6N1ra3WtiPMeE8p4rzXi5Te28xbWxLmje6%2BRK4iAwevbBMMa7W3rvvSW%2BQO72T1pDCAs94ZIyEpvaeUBW4w3hrtfIuDAG0M8HbGmdMGas2ZhrdmnNKbq15vzQWdD54-xQSecenVJ4pHcvkERAiYFCM8PLHRsiNaawXg3IR6d7LGO5iQHQ5iJb3R4HweWAByNhKNN4iHqK5cSC0RAACVXF93clnPKRBcoiFcZYYJeV3IV3CZE1xu0gkhJsXIuxfcIl92ibEjy6TTFZL0WA1Rs51EkE0Z5PixT971TGiQbIW8VoDEXDImA9BcCFAQJ5FAnQRAABFMCrzQF0wZ1wEDoApu0zp-gql8F2ttTwM8eGKD4Z4DuhsakiGTsTHZKwQBrBAN4aZOAumngYnQaSJguCHLnDoDgNzGJ7gJAGDSAoWLnhAOxTiIMeIgGcfxaAyQ0g8GkFkXI%2BQunFAUGUGy%2Bg%2Bg9COoJIYIwnLjEuTgGSsx5KKU8MpMYXA1xMQsFpTg05dIWCXrII8GMZYwB3uBPa549pkCQTgVO0APJUqzvZSgUURBZwADyVVGo1CaU12qdUOvyzAOUcqF1ivgqlFdeX8orsKupYqWptRmr9Baaq5W118tbKlSyuFQvsl3EQII%2B4DxNcMbOcAMZkxppqzq0jt6JGBekMFtQIUFH8FDEx6B4m7UwFspVDqIBEJzo651FCjV1x-m6hpigmllxaf4KZHTTmzNOX0vSR5EA3DCDAbNMzumuNnFAPJCSomeDyZgXapyUi0sMugBZZrDz%2BF2tGzwmzzE7ICnslOmLRWdUaRTDNC4s0%2BBzV0npBai2uUxKW8tubK2zk6E6iy9BknUtbXSjtCtmX-AHbEFNk7mkzrafOvNvSRCFpSMW1dhl10LqregbdGMOBgAQPultbb6ULNPeHEE56x0NQnWmqd4Ub3vvvUu59K6UBrrnRW9yn7v22AWgBmlR6FkEREP8MDOUz1eQEZemD17WkIe6fmx9y6S1vvQxuzDW6nVaHkBZGAeHD3tpA2B3aJGQRkYgxy9O7luXyz5QKkQGrx1NW1dNKV5svpEBlYawmsUqPprg7R1jC6GNPpfahljJyP0cYxjWnKTaD1AePTMTAQmBWkfI8U3TsH5wGYs4hxjyHmNlsM7MrDTqG22ebfhgTCs7MidsxB-Zhzjl3omdiw5VzZLAFueuB5akVgrAYisIAA)
 * [SudokuPad](https://sudokupad.app/cggklbau26)
 
-### Variant 2b
-#### Additional Constraints
+#### Experiment 2b
+* [SudokuMaker](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhATQiMABOgAWcNmxE4ICEQBNMAN0yKUIgEYBPEWVog4jBOOgEQAYXFRM6ACoR649AGtMhgMYQYfHAgtAIgIRAGVGRQhXRgAdHGCAeShTCABzXCk2PThFACs4TxR-WXkRShEYCEV9EQB3TFNaqDh6OChhHEVY4IBBf0wAWlccTBTxBTqGmqaWtsYOrpEAaUxpNBFPOBSUdC8UaR38AG1QFSlGfiIAXxoTs-4ya9u2c4IAJkeQU%2Bf%2BADYPr5e%2BAAzP87gQACyg74EAAcUMBAE54fwAOzI2Ho-BIm6fMH4NE4gEXTEPQl495k6H4P6UwEg2n8SEMgg0p50zFMtn8OHMrGYglcghXXmkwX4CliiW4qms6Xs3mcuXczHYsUCpVCkkczE8sWqjX4zHCsWig1SokszH0tVGrW88142UW4Ha3m6g3652evHq53Gg2m50OmVW11i93O60GxXOiN471U314-3OwPkzFOvFpqnBwGZqlR50xvFxqkJwFJqlXAC6dG8OHQCCamH8B2OIAQOno-EoH073aFdCgKBS2AbBEOlBoU6nRBoc7nrxoS6XM%2Bn843i%2BX27Xs8325XNCBR5P4JoZ7PZBoV6vx7v54fl%2Bvz-vx4vD5vz5%2BNG-35RNH-f8YRoYDgN-H8AMgoCQJg8C-ygmDQOrPsuwuSh0LoDQwBbeoxy4EAeD4CwpmabsqjgPohhGMZDBbJgAiOWsQC0fJXEKRR8P7fgQG8DQvEqbiADlGBgLQ0BIeg2gQeRUJICoqgAXhEMA5k8BAxxEAAKHAAEoRGAWIRBEaIQEYdBNEbWw1JMgBuQyRGHBBGCgHAtM00w7BEABSWQ9IAal87zZDsnBLhC2J60bER6DqRQGiUphWA4Eh0G7TwUswZgUBIWLTBCyKFGcFBqIUBKWHYbLUpQdKsCykhxGK0YEHCnACociAanQEQlMOUoaBEOdoty8QRH6EQlyG9QGjGogRGrfLcCi7w2C6nq%2BoG-qipK0bxs2hrtpmuaWpU1r1NwJQ9gQOBHEsPY2AASUUAB1aYyM0gppAAfXUfqNDYK6dNiAzXPWRaFA%2BthLAgaBFFWkQGrYbsMBICHHvQEgtgQKGYfQAAxNoYEe967u%2BxQdJCoy2uHdBGH%2B7qREOeyjOJ6RsagWGSAADxEAK-quydqx0uTKk0mKpvEHSaCZrSIbZjm9F5y64EOIhBeFxRReGwGQerezHOc1zqdphAVerEQACpJrikaAqN-6BZCy5YliSAoBlsGREwEQIDAdrOu14GjNd92GwUHJvd95b0G1ozA6M0HQ-WZyoFu6RHvpr3LbF62eZEHIKfjgB6QvIogZK2FSd7k9Th6yYLozTjduAwDAaqEBQRQa7hxmQfjhnRsG-pXjmqXe-j3qNtG4fa2lozeqH-r%2Blmmex7nqf%2BoGkfZ-73aB631ed4mzeV77tel436fR9PnfBvGubpfm6Xi9L8vK%2Bb1u1I7rvyel4P3o9-IEcRDvzbl-O60dpZxz7m1fI6clJ82uhAGuj0XqkQ7lXKAKc7qPX6vkH%2BB8YGeDlnDBGSN0aow5pjYh%2BMfBE1gXXbez9Fpl2yhXFIml8jEPwdfQhnh6acOhuzdGnN67x0IW7JSAicYkB0KIymHtCKaCUgAclQfQMiIhejqSok1EQAAlZRudNJewCkQfyIhlGWEMQFTS4dTHmOUf1AxRipFCJkbnMxudLHWK0q4jm3N7FyJEEwhsLCSBsO0rwFA3DT6JQqiQbIncwbNn8FDGA9BcCFAQNpFANQRAABFMAtzQFkwpo4EDoDSRknAWTIl8H6r1Tw1dsGKFwZ4dOgsYlGSdiDHplwQDXB4j4apWS2zIToHREwXBBmNh0BwaZKEBz4CIFGLiQp0JThAFhHCZ08D4G4FEiw0BkhpB4NILIuR8hZOKAoMo8lqgTBGiRGY7QOITJwPRCcTEWKeDYh0TiqELC8U4HWASFhG6yBHJ9GmMBu5XgGlOAaZBH44BdtALSEKvZKUoDZT2IgAA80VyrJSqjVTK2Vhq4swH5PyAd7J-wheHbFuLw6EriSStKGU6r7SaiymlMd9LSwhU0zB1ylKZxEAiXO%2BchWtG9nAT6EM4bsuylQ8BiQTnpHOd0S5BR-A3UEbDWx-VMBdOUuizSEKICAJ9vKxV4CBWx23iqhJigkmhxSVjYZmT-A5LyYJEciBVAoDCDAKpPrsnKIbFAHxdiLGeB8ZgfqNSUjQpEugBpIrhz%2BH6tazwnTRE9O6bEHpsQXWJKhh6uALYvXpIjX6kQAaUhBpUCGkS4aam%2BqjegGoCrpL0EcZC1NMKM0M0RTCAtZbiXZQrck6tqTvWduyTU-1gb1KttDR22p3be2fQ4GABAg6U1pthQ08d5sESTo%2BdO117rLLztrSM31K7G1ruDZuxd26Gy7tsE1I9UKR0NOAiIGEF6-ITp0vg8tbrK33prVu59uTX3NvXW2sNn6u3foVVoeQ0kYD-uHems9F7%2BqgYROBq9aK3aWrlVi0oVKCVEqSpVTltUKXix2kQKl-Kgb2Wg3epsD6EPLqQ02ltaHhOaR3QqmNfkk1DpPaOw4mASOezAxBmJ-HYOCfgxhkTq6UPvvbXpqTWHFXKLk8mgDRGGbybI3Jq9-TBneDrUusZgzJkMWADMzs8z9mXEWfwIElA5w8U2NsCcoAlUTinAiecE66B%2BlNNFo4W4iCUCYn6WUKXDhvmvJl5MUYcvwQS2aRUOWiALhXBlxLyYpQVePEQM8RBkW1arEV8BE4iDfleLecEBWywfAq-%2BV434gStYNJVobnXUtxdeMBIEKIBuAiIOqHLrxFwriBMt-grxyszcOHto8b5Xg7fWdN-YE5Xj-iBN%2BcEE2-Qdcu0cV4cWgTAXBEttrK21sHfBMeMgS4fiq2%2Bxcd0OXwSXmPD8U7oO3i9hxBD78ZArw-H63D5Z9WDtkDnGQOLPwauTaeytCcZAzw-GPCiWHk3fvPcOGQZH-4yCldjBdknRwfio9-F9srbO2w-DAnFlEhPWeI4OyiOcKI4swhF8mfbdOUSU7PCiB7yZ-Q5ZRH%2BQCLPyQ1joLMvzoB26cy80MiuUALAAGINkbIGXWcL%2BFlrmEINbm31AAuXGQpcIAA)
+* [SudokuPad](https://sudokupad.app/ddm0niqrly)
 
-* Killer cages
-  * `sum(R1C1:R3C1) = 15`
-  * `sum(R1C2, R1C3, R2C2) = 16`
-  * `sum(R1C4:R1C6) = 13`
-  * `sum(R1C7:R1C9) = 24`
-  * `sum(R2C3, R2C4, R3C3) = 12`
-  * `sum(R2C5:R2C7) = 13`
-  * `sum(R2C8:R4C8) = 9`
-  * `sum(R2C9:R4C9) = 11`
-  * `sum(R3C2:R5C2) = 17`
-  * `sum(R3C4:R3C6) = 24`
-  * `sum(R3C7:R5C7) = 10`
-  * `sum(R4C1:R6C1) = 13`
-  * `sum(R4C3:R6C3) = 17`
-  * `sum(R5C8:R7C8) = 18`
-  * `sum(R5C9:R7C9) = 20`
-  * `sum(R6C2:R8C2) = 12`
-  * `sum(R6C7, R7C6, R7C7) = 13`
-  * `sum(R7C1:R9C1) = 17`
-  * `sum(R7C3:R7C5) = 8`
-  * `sum(R8C3:R8C5) = 24`
-  * `sum(R8C6:R8C8) = 8`
-  * `sum(R8C9, R9C8, R9C9) = 14`
-  * `sum(R9C2:R9C4) = 11`
-  * `sum(R9C5:R9C7) = 21`
+### Experiment 2c
+* [SudokuMaker](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhATQiMABOgAWcNmxE4ICEQBNMAN0yKUIgEYBPEWVog4jBOOgEQAYXFRM6ACoR649AGtMhgMYQYfHAgtAIgIRAGVGRQhXRgAdHGCAeShTCABzXCk2PThFACs4TxR-WXkRShEYCEV9EQB3TFNaqDh6OChhHEVY4IBBf0wAWlccTBTxBTqGmqaWtsYOrxRpdAIAbVAVKUZ%2BIgBfGlAU1UKCBCgtug22LYIyPfXN-gAmO5BDlWP8U-OQS%2Bv8ADYXr9%2BABmF5vD5fFAXB4EAAsQNh%2BAAHOCjnhPmdoT8kQBORFXfgAdjR7wxUJhhIIqP2OKp%2BHxtOBBBJTKRuzZ9NunL%2Bzx5-EB-IIYNpEPJWMpfwRQoBBL%2BIvu9Olir%2BNJV-EZ6pZcu2OpuevwfIO6JOErpvINgq1%2BAV5v4yrt1INmsd%2BFZ1o5xrJpu%2BzPw3OtDr9atdLr97tdntdAddRtdVtdtrFPux4YNUb9Mb9cb9Cb9tr9QaRIeTmN9eOdBojfozSKzSJzSLzSILSKL9JLJrLqZbBvbqsrMur7IN9fpcdLFPjo9JkLN2cts-F5fpraVS5Tkv4Ib9Lsn86Rw-puwAunRvDh0Kc4Jh-Mt8GsQAgdPR%2BJQXs-XwQiHQoChDrg94rJQNAgSBP4QTQjxQTBYGgTQkE-tByHwXBiEwShII0FhWFwjQeF4WQNBEUROHYfhFGEcR1FkbhlHUSRND-ExLFEjQbFsciNBcVxzF8exAmcdxwn8cxHECTx3Enh%2BL7bJQ8l0BoYC3vU2AYtwvD8CAUzNK%2BVRwH0QwjGMhi3kwAQPmeIBaPkriFIoXBPrJFjeBoXiVFpAByjAwFoaAkPQbQIPIskkBUVQALwiGAcyeAgakiAAFDgACUIjALEIgiNEICMOgmhXrYcU5QA3JlIh-ggjBQDgSWJaYdgiAApLIaUANStc1shlTgOw9bEF5XiI9B1IoDRRUwrAcCQ6Cvp4M2YMwKAkKNpg9YNCjOCgxkKBNLDsMts0oPNWBLSQ4jbaMCD9TgG0VRANToCIUUrKUNAiD%2Bw2reIIj9CI0FfeoDR-UQIgnutgEKN4bBPS9b0fe9W07b9-2IxdyMg2DN0xbd8W4EoiwIHAjiWIsbAAJKKAA6tMemJQU0gAPrqO9GhsETKWxBltUiHdDNsJYEDQIosMiBdbCvhgJD85T6AkCkKAIILwvoAAYm0MCU-TZPM4oKU9Vld1-ugjDs89IgrOVWXa9IytQCLJAAB4iB1bNE8BJ4pWFlSJSNQPiClNBW0l-N2w7eiu4TcArEQnve4ovvfZzPMnuVlXVbVxumwgMcniIABUgNjT9HVZ%2BzHs9TssSxJAUAh5DIiYCIEBgPdj3J9zWW1-Xl4KDkzet9D6DJ1lndZbzDeeNVUCk9IlPm03hd%2B8XLsiDkBvjwA9Jvg0QNNbCpPT0%2BzxTesb1lGx13AYBgMdCAoIoJ%2Bi5bPPjxbv2ff0jxg0Hr-j69CNfrfzPMHLKr0v7vX6KDEBf8wFAPeh9H%2BoD36ow-kg2BKCAaIJgW-OBUCEHAN-rglBn1-pg2DuDYO29d770PtfW%2BcUH5P31sHbu9MG75AHiIehd8mFk2HsHMeb87r5HnlFN2xMIAn0pjTXSD8j5QBnmTSm718gsIwSIzwYdRbi0lnLGWDsFZKyFvbNWGstaiLPsg6hgE97LQPikRK%2BRtHqOIZozw5tnEmIdo7c%2B49NF1yil4lWJAdB%2BMNg3HgfBzYAHJZH0D0iIXo8UjJXREAAJRiavRKTcOpEHaiIGJlgskdUSv3PJBSYnvUydk4JpjQmr3yavIpJSkp1J8Y01xuCbGXjsSQBxyVNJdLfpNA6JBsiP0hk0W8xiYD0FwIUBAyUUA1BEAAEUwDfNAiyNmHAQOgQWcyFn%2BEGXwd6r0p6KOkYoVRnh56e2GSIKuPNnk7BAHsEA3gjk4EWUBaSdAzImC4B8q8OgODApkl%2BfARBbSfjkgpEASkVJ43UiAKJWloDJDSDwaQWRcj5EWcUBQZRwrVAmD9HSMx2gOQBTgcyqwrI2U8HZeY%2BBQBwpch5dyblCCX1kP%2BRmJsYDPyIh9ECH0yCUJwDXaASU%2BVNyipQEqjcRAAB5hr7WmkdE6i1lrfWVZgNqbUO7lTYXy-uirlX93VaMrVc0FpnXRldK1RqR7pWDnyy5f4ihRUXiIXEq914etaM3OAjN%2Bai1tctIxT9EhYvSLi7o%2BKCj%2BBJt49AZT3qYEeWakNEBOEt1DeG-hbrR7IKjeMxQkze7TP8Ic%2BZPyTk-NWZ5f8iAjhhBgPW45SyYmXigK08phTPCtMwO9H5KRBU%2BXQOcr1iz3r5s8A8vxzysqvOrnSzVy0JmCxrTeOtPgG2LOWS2tt8V3idu7Y23tl4ahhuCvQKp-LJ1CpnRbcVyJl2xArTuqZ%2B7ZlHqbSskQraUjtovT5K9x6%2B3oDvYzDgYAEBPonVO4V5yP351xF%2BzdU1t1Vt3YVf9UGgOnrA%2BelAl7D09sSjBuDtgrrIYFa%2B85XERDIkw21T9KV1E-vw3%2BmZxGlnNpA2ejtkGqPXpo7esNWh5DBRgIxl9070OYfeux3EnHsMyrroleV5slUqptVuma9rTp6v9ijIgBrXVc3Krx6thGBMSePcJ0D4GKPie%2BdB6TjMB1tTHc%2B1Db6ViYFU43DjXGun2YI9eJzXmSMibI2JrtzmTm0bDSO-z46mPKYtgF9T-nsNvI%2BV8wD%2ByGUfMBRZYAILnzgrZTsHY0kdhAA)
+* [SudokuPad](https://sudokupad.app/ubh736hwra)
 
-### Variant 2c
-#### Additional Constraints
-
-* Given digits:
-````
-.5. 6.4 .9.
-8.. ... ..4
-... ... ...
-2.. ... ..5
-... ... ...
-7.. ... ..9
-... ... ...
-3.. ... ..6
-.2. 3.8 .7.
-````
-
-### Variant 2d
+### Experiment 2d
 #### Additional Constraints
 
 * Quadruples
@@ -104,7 +35,7 @@
   * after `R8C2`: `268`
   * after `R8C7`: `579`
 
-### Variant 2e
+### Experiment 2e
 #### Additional Constraints
 
 * Quadruples
@@ -117,7 +48,7 @@
   * after `R7C3`: `1589`
   * after `R7C6`: `1356`
 
-### Variant 2f
+### Experiment 2f
 #### Additional Constraints
 
 * Quadruples
@@ -138,7 +69,7 @@
   * after `R8C2`: `268`
   * after `R8C7`: `579`
 
-### Variant 2g
+### Experiment 2g
 #### Additional Constraints
 
 * Quadruples
@@ -151,7 +82,7 @@
   * after `R8C4`: `3479`
   * after `R8C5`: `1478`
 
-### Variant 2h
+### Experiment 2h
 #### Additional Constraints
 
 * Cages mod 7: Cells in cages sum to a value whose remainder (when divided by 7) is given in brackets in the top left corner of the cage.
@@ -175,7 +106,7 @@
   * `sum(R8C7:R9C7) mod 7 = 0`
   * `sum(R8C8:R9C9) mod 7 = 2`
 
-### Variant 2i
+### Experiment 2i
 #### Additional Constraints
 
 * Cages mod 7 (`?` means no given total mod 7):
@@ -196,7 +127,7 @@
   * `sum(R8C4:R8C6, R9C1:R9C6) mod 7 = ?`
   * `sum(R8C7:R9C7) mod 7 = 0`
 
-### Variant 2j
+### Experiment 2j
 #### Additional Constraints
 
 * X-Sums
@@ -220,7 +151,7 @@
     * `C9=1`
 
 
-### Variant 2k
+### Experiment 2k
 #### Additional Constraints
 
 * Quadruples
@@ -233,7 +164,7 @@
   * after `R6C4`: `256`
   * after `R6C5`: `236`
 
-### Variant 2l
+### Experiment 2l
 #### Additional Constraints
 
 * Quadruples
@@ -250,7 +181,7 @@
   * after `R8C1`: `2345`
   * after `R8C8`: `1267`
 
-### Variant 3
+### Experiment 3
 #### Solution
 
     475 986 213
@@ -263,7 +194,7 @@
     189 524 367
     754 863 129
 
-#### Variant 3a
+#### Experiment 3a
 ##### Additional Constraints
 
 * Black/white Quadruple Dots (negative): "A white dot in a corner of 4 cells indicates exactly one pair of digits, whose sum is divisible by 5. A black dot indicates 2 pairs of such digits around the dot. All dots are given."
@@ -335,7 +266,7 @@
     * after `R8C5`
     * after `R9C8`
 
-#### Variant 3b
+#### Experiment 3b
 ##### Additional Constraints
 
 * Quadruples:
@@ -358,7 +289,7 @@
   * after `R8C5`: `346`
   * after `R8C8`: `279`
 
-#### Variant 3c
+#### Experiment 3c
 ##### Additional Constraints
 
 * Quadruples:
@@ -381,7 +312,7 @@
   * after `R8C4`: `568`
   * after `R8C7`: `123`
 
-### Variant 4
+### Experiment 4
 #### Solution
 
     263 481 795
@@ -394,7 +325,7 @@
     854 362 179
     679 815 243
 
-#### Variant 4a
+#### Experiment 4a
 ##### Additional Constraints
 
 * Product cages: Digits in cells in a cage don't repeat and multiply to the value in the top left corner of the cage.
@@ -413,7 +344,7 @@
   * `prod(R8C5:R8C6) = 12`
   * `prod(R8C7:R8C8) = 7`
 
-#### Variant 4b
+#### Experiment 4b
 ##### Additional Constraints
 
 * Product cages: Digits in cells in a cage multiply to the value in the top left corner of the cage.
@@ -434,7 +365,7 @@
   * `prod(R9C5:R9C6) = 5`
   * `prod(R9C7:R9C8) = 8`
 
-#### Variant 4c
+#### Experiment 4c
 ##### Additional Constraints
 
 * Given digits:
@@ -470,7 +401,7 @@
     * `C6=9`
     * `C9=8`
 
-#### Variant 4d
+#### Experiment 4d
 ##### Additional Constraints
 
 * Given digits:
@@ -528,7 +459,7 @@
     * `C8=8`
     * `C9=8`
 
-#### Variant 4e
+#### Experiment 4e
 ##### Additional Constraints
 
 * X-Sums
@@ -552,7 +483,7 @@
     * `C4=41`
     * `C7=3`
 
-#### Variant 4f
+#### Experiment 4f
 ##### Additional Constraints
 
 * X-Sums
