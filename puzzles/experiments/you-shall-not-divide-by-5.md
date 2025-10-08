@@ -59,89 +59,12 @@
 * [SudokuPad](https://sudokupad.app/muyvv7kl13)
 
 ### Experiment 3
-#### Solution
-
-    475 986 213
-    318 452 976
-    926 317 458
-    842 631 795
-    597 248 631
-    631 795 842
-    263 179 584
-    189 524 367
-    754 863 129
+* Additional Constraints
+  * Black/white Quadruple Dots (negative): "A white dot in a corner of 4 cells indicates exactly one pair of digits, whose sum is divisible by 5. A black dot indicates 2 pairs of such digits around the dot. All dots are given."
 
 #### Experiment 3a
-##### Additional Constraints
-
-* Black/white Quadruple Dots (negative): "A white dot in a corner of 4 cells indicates exactly one pair of digits, whose sum is divisible by 5. A black dot indicates 2 pairs of such digits around the dot. All dots are given."
-  * white dots:
-    * after `R0C0`
-    * after `R0C2`
-    * after `R0C4`
-    * after `R0C6`
-    * after `R0C9`
-    * after `R1C0`
-    * after `R1C2`
-    * after `R1C5`
-    * after `R1C6`
-    * after `R1C7`
-    * after `R1C8`
-    * after `R1C9`
-    * after `R2C0`
-    * after `R2C2`
-    * after `R2C3`
-    * after `R2C4`
-    * after `R2C8`
-    * after `R2C9`
-    * after `R3C1`
-    * after `R3C2`
-    * after `R3C3`
-    * after `R3C5`
-    * after `R3C6`
-    * after `R3C8`
-    * after `R4C0`
-    * after `R4C5`
-    * after `R4C6`
-    * after `R4C8`
-    * after `R4C9`
-    * after `R5C1`
-    * after `R5C7`
-    * after `R6C0`
-    * after `R6C1`
-    * after `R6C3`
-    * after `R6C4`
-    * after `R6C6`
-    * after `R6C8`
-    * after `R6C9`
-    * after `R7C0`
-    * after `R7C1`
-    * after `R7C2`
-    * after `R7C3`
-    * after `R7C9`
-    * after `R8C0`
-    * after `R8C1`
-    * after `R8C4`
-    * after `R8C6`
-    * after `R8C7`
-    * after `R8C8`
-    * after `R8C9`
-    * after `R0C0`
-    * after `R0C2`
-    * after `R0C4`
-    * after `R0C6`
-    * after `R0C9`
-  * black dots:
-    * after `R0C8`
-    * after `R1C1`
-    * after `R2C1`
-    * after `R4C4`
-    * after `R4C7`
-    * after `R5C2`
-    * after `R5C8`
-    * after `R7C8`
-    * after `R8C5`
-    * after `R9C8`
+* [SudokuMaker](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhATQiMABOgAWcNmxE4ICEQBNMAN0yKUIgEYBPEWVog4jBOOgEQAYXFRM6ACoR649AGtMhgMYQYfHAgtAIgIRAGVGRQhXRgAdHGCAeShTCABzXCk2PThFACs4TxR-WXkRShEYCEV9EQB3TFNaqDh6OChhHEVY4IBBWvF6zQiFTBwROBFvKBw0EQgwEQAWCZRpdBER5U9EFDWUAA98hEzZ6ZEWzChZ%2BeUU%2BvQaPoh0TXRGGHW15TUsLQ5tPQoIl6v3yriUJQ2mC2CB2IgATGc4Bc1nMxIxPOIlJhbgg1q12lVTIN5CQgdJwbixlBNLcVIUSF4Vmx0AQANqgFRSRj8BYAXxoHK5-AA7PzBWxuQQyGKQJyJfwAJwyuWS-AADmVQoIADZNfKCHC9aqiEb%2BABmU0EC0C2Va-Amm0q-gax12vmu-X4aUe1WGn2Ky34UX%2BnWBpUh-B%2B8Wq3UR63R-gOhMEYPJ-DutPetMu7OBjO2z1RgsxwPx4uJwOp8sEcOZwNZ6v4WuNqtOg15wM5xuxtNltv2wM9xt9u1Jlth%2BudjsRov92d2of9keesf91t25v9hv9rv9-P91d23cbycz6e9weVq8R7duqcRxd25fGwPzz1KgC6dG8OHQCCaIy4myoAIDo9D8JQMqgeBBBEHQ1K3LgLL4KylA0GhaFwVhNBwjheEYehNDYXBuGkYRBHEXhZFmjQNE0QsNAMQxZA0CxLF0bRjFccxrG8Rx9HcbxbE0NqIlicKNASRJao0DJMmiQpklKdJsmqYpolSUpcmyR%2BUFgYmlCGXQGhgCM9TYHg%2BDcLw-AgNAyRpDw0hZLk%2BSFAocgKGUFRVGQtT1JiNRNC0bSMB0hgjEwAQoV%2BIBaKChSKFwIDQbZ3gaF4lS2ZylzTCkAD6rwwGsAC8IisixIhEGhVVkB%2BADcsSxJAlwABQ5esIhlZQ9WdQAPGcLDsCgJDoOBnijZgzAjXUiimL1mAANSLQAlLEwCxCIIgtSI7WtCIORdaUvWHQNTCsBwo3jZN00kOIKDYuICAncta2jCIG3vVtHWeIwUDUkUZWYCIABUIgKiIi0HY1X0iB1EBwPlBSrEd53DSQKQoAglhMugiQOekzndK5BT%2BI4lgQNAijoK1OQPJgK0w1tW07XtlwI54VyzIjyPMm9zMfZtAuDRdI3ZIoFO-v%2BSL%2BBTMD0Lg7mtdMNQiAAcigKSIKoKBhDAcsK9M-itQA5L%2BUAm5DB1WybniW1DmAPHlhVvPc5W-f97kPBzH4rYzQtbbyQtBzgIexGjl3i5Lf4AbLPiG0rKvq5r2t0nrBuK8bZvoDUiMIE4JtO5rLvFQ8qEPGqvv%2BzgEdi4oEtIdLgEZ0bCDKygqsa1rCA6%2Bn8eZ232e5-lHBgAgheyMXRVu%2BXIhqiDCpVzDtckFHjex9j-et%2B3ncpz3advC3StD4jtgpE9E-O9PZcyXPC%2BLZXfvL0Nkf19HTdx-LA878n3e94fW9j6-mHloeQ%2BcYCXynq7MulAF4V3vo-auzVoC7Q6sDbqC0RBnRfiNMaKAJpYFurNBoABaKqC1XrrSFivNeUsN5H2NknLuqddYAK-tvE%2B%2BULaLUdpPAq19yqYDgesBBS9qE4NXm-deMtN7sMTh3X%2BLC%2B5yKzsAnmJseFF34dAwR8CFQ8LEaHEA-IQDeBUUBGKJjIomC4CYv8OgOC2JlDwPgFgaj9BhBSFkdBUoGkMrhBgrReDIXZClfSFgmSYHoM8QwUA9gEEoCQAJUAdAJKSXQOAOAUiOPwGhcAmBpAWAAMRgFKWUwwMdIi2SKYZWp1A6CVNcCgAA6uoUwaTKCGliugHQMBQHMjZOXSgX5WS4WGTQVkDFxmslEtMhU6ERmYRGbhIgIyWKrImaJDZrIJLbJkts%2BZ2y0JwmWThEZNETkTIYpc1kMkbnzJuXBM0pznkTLoms2iIzRKvNuZ8iZaEFgfMBZsxiIyZLAtZPMiFcE6oTIkrC8u2oRlwSRW8kSIyGKopmeiiZ8kRnzKxWhYUyLJKnOJWi8lkLSX-J0hMuClcrm0uxQynZTK5L4qZWhReEzcLcsmTQPlok%2BXzMXrpG0LjbIgk8GCIY3iwkwUjP4ugIVgnAXlbZSJ0TODwXibk9JIAUlpICZk7JEE6CmUKYQGpdTKClIqf%2BKpxSbX1JAI0lpbTxAdK6Q03p-SQm-OmVhElNymIjIkhC3CCKZJRupRVNlAqPy6V0ryIAA)
+* [SudokuPad](https://sudokupad.app/1hh4qkg8er)
 
 #### Experiment 3b
 ##### Additional Constraints
