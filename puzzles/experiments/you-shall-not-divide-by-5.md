@@ -100,39 +100,10 @@
 
 #### Experiment 4c
 ##### Additional Constraints
+* Numbered rooms
 
-* Given digits:
-````
-... ... ...
-... ... ...
-... ... ...
-..6 ... ...
-... ... 3..
-... ... ...
-..2 ... ...
-... ... ...
-... ... ...
-````
-
-* Numbered rooms: Digits outside the grid must be placed `n` cells away in theat direction, where `n` is the digit placed in the first cell in that direction.
-  * top:
-    * `C2=2`
-    * `C5=6`
-  * left:
-    * `R4=7`
-    * `R5=3`
-    * `R7=2`
-    * `R9=5`
-  * right:
-    * `R4=6`
-    * `R6=7`
-    * `R7=1`
-  * bottom:
-    * `C1=9`
-    * `C2=9`
-    * `C3=3`
-    * `C6=9`
-    * `C9=8`
+* [SudokuMaker](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhATQiMABOgAWcNmxE4ICEQBNMAN0yKUIgEYBPEWVog4jBOOgEQAYXFRM6ACoR649AGtMhgMYQYfHAgtAIgIRAGVGRQhXRgAdHGCAeShTCABzXCk2PThFACs4TxR-WXkRShEYCEV9EQB3TFNaqDh6OChhHEVY4JxGGC00FCq2n3QvFGlR-ABtUBUpRn4AJgBfGln5-gA2VfW2BYIAZh2QOb3%2BABZj0-38AA4rjYIiB7OCAHYXm4BOT-4yX4I-zWJ0edwB%2BGewOuS3BPyhoI%2B8Ne%2BG2SJuRzRF3Bl0xBDhuxuiIJf3BGOJBFR5LBuIh4JWNPxIORZJAKVUhQICCgCzo0Ip4MhVKBVPuNJxVPpVKJTMJ2PBoqplJlMIZxzZKg5%2BC5POVh3Bwt1tJpgsNksNBr5%2BGllvFhpZlsZloVhqVlvtoJN6s12pQvNBZod4OtoNtlotoNdoOdTv1cpp7uRkeRAY9Qdh4KTstVNOjqZp4eTcapRwAunRvDh0Fy4Jh-JMZiAEDp6PxKMcmy2nnQoCg2bh65QaIPB0QaKPR4saJPJ8Oh2P5xOp0vZyOF0vpzQDpvt%2BcaLvd2QaIfD1vT3vzwej1ez1v9%2Bfj1fNjQn0%2B3jQ32-bjQv1%2BX8-3wBn7fsBf6voBwE-iW7bNvwRCUPBdAaGAtb1NgeD4NwvD8CA0DJGkPDSFkuT5IUChyAoZQVFUZC1PU4iNM0rTtIohi1kwATTGWIBaPkriFCxGGNjBFjeBoXiVNhcxQLIvYAProL06AiAAvCIUyHiIcE0JpZAlgA3LEsSQNJAAUUkiJgKmlHpFkiAAPCITCsBwJDoC2niuZgzAoCQdSKKYNmYAA1EFACUsTALEIgiMZIhma0Ig5FZlA2UlDlOewPluSgHlYN5JDiCgmApOICCpSF4U4NFkVVdFIjmZ4jBQD2RSqZZABUIhfCIQWJQZtXReZEBwLJBQTFZGUuSkKAIJY4xsOgiR4ekhEAILEQU-iOJYEDQIo6AmTk2mYKF-V1TF0BxUN%2BQiBAYC3SNY0LZV501ed0WTT52SKDtlbVrWs0%2BPQuCkSZOAoDUIgAHK9og7JhDAO0wMD4P%2BCZADklZQOjPWJbj6OeDjvWYNp4MpPJinaVMjXNaR2nDZ4JahadUV1csrPszgnOxJ9JDfb9VZNADSMo6D4OQzDKRwxqCMiyDaOY%2BgNQjQgTjo6TckKTA6BU4OIi3EzLM4Lz-P9v9-hy6jCBgxD0Owwg8O9JboOK8rskcGACDqzJ5Nazral67c7VfIb-Um4oP1m0LFtA-L1vi3bUsOzLTux1bGOVm7tglV7Gu%2B5TalfvrwdBQbzNhywmV8xHAvm4DyNxzbEv247iNpy7mcjVo8iqzA3tkxT2tU0HXzaSPpeh4ZOCxfF0mWapKW2ellcudluVeT5fkNAAtJpgUVRFrPh5Hf3R-XotownkvSygsvtwrneydjQUkz7g-%2B1MmDB8dJdl0bH0ry%2BjXKONYY4N3TlfFuKc27gI7krR66MX553flTV%2B49MCTy5iAVYIBvCwLrAQKYUE6BsRMFwHBVYdAcHIdBTs%2BAyCUF3Lgs49YJR0GEAgNAc1pAEBTImdhJguHzUBEGARnCoDcLYAQc4oZQRbhwoIiRwj6EFhuJOBR4jJHvGDMiQ8GihE8PwF8R0EYxEGKkfQ2RyI3z6KUYYt4mZYJmLsRY24OjvjOK0RCIgJoHSeOUT4vh6J-GGJ8QmDxtivE%2BMcQQL8kSAlEB%2BFxSh1DBLeDYOYQgABieCuTqDLGWFBZYQA)
+* [SudokuPad](https://sudokupad.app/e4f5mlbsug)
 
 #### Experiment 4d
 ##### Additional Constraints
