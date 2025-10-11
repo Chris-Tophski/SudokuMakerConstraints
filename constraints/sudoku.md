@@ -29,7 +29,7 @@ Normal Sudoku rules apply. Place each of the digits 1 to 9 exactly once in every
 
 ## Other configurations
 * Sudoku puzzles may differ in size. Only square numbers allow for regular, square shaped regions. Prime numbers cannot have regular regions.
-* Sudoku puzzles may have irregular regions. Irregular regions may be contiguous or disjoint. There may be additional regions, such as in [Windoku puzzles](/constraints/windoku/README.md), [Killer Sudoku](killer-cages.md), and others.
+* Sudoku puzzles may have irregular regions. Irregular regions may be contiguous or disjoint. There may be additional regions, such as in [Windoku puzzles](/constraints/windoku/README.md), [Killer Sudoku](/constraints/cages/README.md#killer-cages), and others.
 * Other than grids with a contiguous square structure, some puzzles may include gaps, that don't contain a digit, such as in [Deconstruction puzzles](deconstruction.md) and [One-Gap-Each puzzles](one-gap-each.md).
 * The solution of Sudoku puzzles may contain any set of n symbols. Solutions may not have any arithmetic structure, e. g. if the symbols are letters or pictures.
   There may be more or less than n symbols, if repetitions or omissions of symbols are allowed.
