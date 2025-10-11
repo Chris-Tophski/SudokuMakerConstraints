@@ -31,3 +31,5 @@ and each region needs a separate copy of the constraint.
 
 The killer cages approach collides with actual killer Sudoku markings and may therefore not always be appropriate. We can add several "killer cages" constraints to keep them sepearate,
 but visually, this is not ver attractive. However, the solver is very fast with killer cages, compared to extra regions.
+
+A killer cages approach [example is available here](https://sudokumaker.app/?puzzle=N4IgZg9gTgtghgFwGoFMoGcCWEB2IBcIAjAHQCsJADCADQgAOArgF7MA2KBoOcMnhtEHEYIAFtAIgAwqKiZ0AFQj1R6ANaZBAYxRs26AgG1gAXxqnzZi9au3L9mw7uOXzt04%2BvP7r75--vQL8ggOCw0LcAXTotXHQEKDhMHAQDfGMQBABPen5KK0yc-iI6KBQAc2wcNMNKGjq6kqaaACZW9ob6mmaStr6uzp72-oBmGjGxgBYaaemyGnn5ifGZ1bmFjeWptY3FmgA2A6OAdhpT04AOGiurw7uzh8vr5-vD84eb68iC7NyCEcoJRAWjg5RQNVAOj0NSIjSabSIAE5WnUWr0ri1kQDoiAAG5wNiMPIFKH6IxEaZEeZEQ4tMYtaYtJZtEYTSY4-GE4nmYG6MnpSaHSanSZXMiLQ5kU77ab7eb7fYcglEgj5HmkmpkOpkEpkNpkZH7Or7Er7W7I46UJVc1UmHHxLIcLiZFAADwQztibAkhAAxJQA4GQGZgaD%2BJCIN6oJJ-YGA8GTHbE0A).
