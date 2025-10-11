@@ -11,10 +11,12 @@ Usually, the window regions are marked as gray 3x3 squares, but it also often ma
 See below for some technical advice.
 
 ## Implications
-Additionally to the marked or mentioned 4 regions, there are 5 implicit regions emerging from that rule.
+Additionally to the marked or mentioned 4 regions (white cells in the following schema), there are 5 implicit regions emerging from that rule.
 These are based on [Set Equivalence Theory](/constraints/set) applied to the entire grid and the 4 marked or mentioned regions:
-* As there is a set of all symbols in each row and column, the leftover cells in each row/column other than those within the additional regions also form (disjoint) regions.
-* Taking all of the cells within the marked or mentioned regions and the leftover cells so far out of all of the cells of the entire grid, there are 9 cells left, that also form a (disjoint) region.
+* As there is a set of all symbols in each row and column, the leftover cells in each row/column other than those within the additional regions (red, blue, purple and orange in the following schema) also form (disjoint) regions.
+* Taking all of the cells within the marked or mentioned regions and the leftover cells, so far, out of all of the cells of the entire grid, there are 9 cells left (yellow in the following schema), that also form a (disjoint) region.
+
+![Windoku Schema](windoku-schema.png)
 
 ## Implementation in SudokuMaker
 There is no direct rule for this constraint.
