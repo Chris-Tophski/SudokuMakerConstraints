@@ -9,7 +9,7 @@ For the sake of exposition, let's assume a side length of 9 and the digits from 
 Place the digits from 1 to 9 exactly once in every row and column.
 
 ### Implications
-A Latin Square is less strict than a [Sudoku](sudoku.md), because there are no regions.
+A Latin Square is less strict than a [Sudoku](/constraints/sudoku/README.md), because there are no regions.
 Ignoring the missing regions, the arithmetic implications are similar to those Sudoku puzzles.
 
 ### Implementation in SudokuMaker
