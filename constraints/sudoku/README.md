@@ -24,8 +24,8 @@ Normal Sudoku rules apply. Place each of the digits 1 to 9 exactly once in every
     * remainders, when divided by 3; summing to 9, 12 and 15
     * low, medium, high; summing to 6, 15 and 24
   * There is no annulator (0), 1 unit, 4 primes, 4 composites, 3 squares, 2 cubes, 1 quartic, 1 quintic number etc., where the digit 1 is unit/square/cube/...
-* Geometry: By "Set Equivalence Theory" ([SET](set/README.md)), it is possible to equate certain sets of cells within the puzzle, meaning a certain set of cells contains the same digits as another set of cells,
-  e. g. the [Phistomefel Ring](set/README.md#phistomefel-ring).
+* Geometry: By "Set Equivalence Theory" ([SET](/constraints/set/README.md)), it is possible to equate certain sets of cells within the puzzle, meaning a certain set of cells contains the same digits as another set of cells,
+  e. g. the [Phistomefel Ring](/constraints/set/README.md#phistomefel-ring).
 
 ## Other configurations
 * Sudoku puzzles may differ in size. Only square numbers allow for regular, square shaped regions. Prime numbers cannot have regular regions.
