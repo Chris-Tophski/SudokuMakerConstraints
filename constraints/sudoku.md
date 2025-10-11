@@ -1,6 +1,7 @@
 # Sudoku
 A Sudoku puzzle in general consists of a square shaped, contiguous grid of n by n cells, with n rows, n columns and n regions.
 The solution consists of n different symbols, not repeating within a row, column and region.
+Classic Sudoku puzzles also have given digits, but they may be omitted or minimized in a variant Sudoku, because of restrictions of additional rules render them redundant.
 
 ## Default
 The default Sudoku is a 9x9 grid, regularly partitioned into 3x3 boxes.
@@ -47,3 +48,4 @@ If 0 is a digit used in the solution, the product of digits will collapse to 0, 
 * There are rules available for rows, columns and regions. In Sudoku puzzles, rows and columns are always included, in custom puzzles a "rows and columns" constraint is optionally available.
   For non-contiguous grids, grids with non-square shape, side lengths other than the number of symbols the "rows and columns" constraint won't work properly in general.
   The constraint "Extra Regions" or a JavaScript based custom constraint can be used to enforce uniqe symbols in each row and column.
+* The constriant "Given Digits" may be used to supply - as the name suggests - given digits.
