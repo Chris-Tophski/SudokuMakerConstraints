@@ -8,6 +8,7 @@ Here, I try to collect puzzle constraints I come along in one way or another and
 * explain implications of the constraint rules (the "secrets")
 * explain variations of the constraint
 * explain ways to implement the constraint in SudokuMaker
+* interactions with other constraints
 
 ## Completeness
 * A constraint may apply globally or locally.
