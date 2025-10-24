@@ -11,11 +11,20 @@ So, "positive" means from bottom left to top right and "negative" means from top
 In addition to the main diagonals, there are secondary diagonals everywhere along the grid, whose lengths are always smaller than those of the main diagonals.
 Secondary diagonals therefore alsways contain an incomplete set of symbols. The main diagonals may or may not contain a complete set of symbols.
 
+A Sudoku with both positive and negative diagonals is commonly called "Sudoku X" or "X-Sudoku".
+
 ## Rules
-Place the each symbol exactly once into each cell of the indicated diagonal(s).
+* Place each symbol exactly once into each cell of the indicated diagonal(s).
+* Symbols along an indicated diagonal cannot repeat.
 
 ## Implications
-(TODO)
+* Each set of corners of a concentric square contains different symbols.
+* At most one of the symbols can be omitted from the ring of cells around the center box (Phistomefel ring) and this digit must be in the center of the grid.
+* (TODO)
 
 ## Implementation in SudokuMaker
-(TODO)
+* SudokuMaker has 2 constraints - one for the positive and one for the negative (main) diagonal.
+* Secondary diagonals may be implemented with either
+  * some line-based constraint
+  * a custom JavaScript constraint with groups of cells for each secondary diagonal
+  * an [extra region](/constraints/extra-regions/README.md)
