@@ -20,16 +20,88 @@ At the moment, I am not involved in the development of the web app.
 * The entire puzzle definition with solution and code is part of the URL. This is not just a Sudoku Maker thing, this seems to be done in most of the other web apps as well. As long as no huge code is involved, this is not a problem, but it may become one for complex constraints with several complex constraint components and images etc., as browsers (and servers) may put a limit to thw URL length, which would result in an incomplete puzzle definition and, therefore, data loss.
 * Although there are a lot of constraint components included, they do not cover a lot of concepts, so far. Therefore, the need for a custom component may arise quickly, even for puzzle constraints that sound quite easy.
 
-## Geometry
-
-(TODO)
-
+# Documentation Attempt
 ## Access to the puzzle
+The puzzle object is accessible either via `puzzle` or via `sudoku` and provides the following attributes:
 
-(TODO)
+| Name | Description |
+|-|-|
+| `puzzle.helpers` | helpers and tools for grid puzzles, also directly available as `helpers` |
+| `puzzle.spec` | specification of the current grid puzzle |
+| `puzzle.state` | current state of the current grid puzzle |
 
 ## Helpers
+### Naming
 
+| Name | Description |
+|-|-|
+| `helpers.naming.getCellName(cell_id: number)` | Converts a cell ID to a cell name with row and column, starting at `R1C1` in the top left corner |
+| `helpers.naming.getBranchingLineName(line_name: string, cell_ids: ?)` |  |
+| `helpers.naming.getCageName(cage_name: string, cell_ids: ?)` |  |
+| `helpers.naming.getCellName(?)` |  |
+| `helpers.naming.getCellsDescription(?)` |  |
+| `helpers.naming.getColumnName(?)` |  |
+| `helpers.naming.getDigitFilterDescription(?)` |  |
+| `helpers.naming.getDigitSetDescription(?)` |  |
+| `helpers.naming.getEdgeClueName(?)` |  |
+| `helpers.naming.getEdgeClueNameFromDomino(?)` |  |
+| `helpers.naming.getLineName(?)` |  |
+| `helpers.naming.getOuterClueName(?)` |  |
+| `helpers.naming.getRowName(?)` |  |
+| `helpers.naming.getTupleName(?)` |  |
+| `helpers.naming.getTupleNameBySize(?)` |  |
+
+### Digits
+
+| Name | Description |
+|-|-|
+| `helpers.digits.allDigitsMask` |  |
+| `helpers.digits.maxDigit` |  |
+| `helpers.digits.minDigit` |  |
+| `helpers.digits.createEvensDigitSet(?)` |  |
+| `helpers.digits.createFilteredDigitSet(?)` |  |
+| `helpers.digits.createFullDigitSet(?)` |  |
+| `helpers.digits.createModuloDigitSet(?)` |  |
+| `helpers.digits.createOddsDigitSet(?)` |  |
+
+### Lines
+
+| Name | Description |
+|-|-|
+| `helpers.lines.getAllPairsAlongLines(?)` |  |
+| `helpers.lines.getCellsBetweenLineEnds(?)` |  |
+| `helpers.lines.getLineEnds(?)` |  |
+
+### Geometry
+
+| Name | Description |
+|-|-|
+| `helpers.geometry.getSubsetsPerRegion(?)` |  |
+| `helpers.geometry.getAdjacentCells(?)` |  |
+| `helpers.geometry.getAllColumns(?)` |  |
+| `helpers.geometry.getAllDiagonallyAdjacentPairs(?)` |  |
+| `helpers.geometry.getAllDominoes(?)` |  |
+| `helpers.geometry.getAllKingsMovePairs(?)` |  |
+| `helpers.geometry.getAllKnightMovePairs(?)` |  |
+| `helpers.geometry.getAllPairsWithOffset(?)` |  |
+| `helpers.geometry.getAllQuadruples(?)` |  |
+| `helpers.geometry.getAllRows(?)` |  |
+| `helpers.geometry.getCellsAreKingsMoveApart(?)` |  |
+| `helpers.geometry.getCellsInColumn(?)` |  |
+| `helpers.geometry.getCellsInColumnOfCell(?)` |  |
+| `helpers.geometry.getCellsInDiagonal(?)` |  |
+| `helpers.geometry.getCellsInRow(?)` |  |
+| `helpers.geometry.getCellsInRowOfCell(?)` |  |
+| `helpers.geometry.getCellsKnightsMoveAwayFromCell(?)` |  |
+| `helpers.geometry.getCellsPointedAtByOuterClue(?)` |  |
+| `helpers.geometry.getDiagonallyAdjacentCells(?)` |  |
+| `helpers.geometry.getManhattanDistanceBetweenCells(?)` |  |
+| `helpers.geometry.getOrthogonallyAdjacentCells(?)` |  |
+
+## Specification
+(TODO)
+
+## State
 (TODO)
 
 ## Custom constraints
