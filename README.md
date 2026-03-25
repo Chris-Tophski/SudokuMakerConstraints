@@ -24,4 +24,4 @@ See also:
 - [SudokuTools Repository](https://github.com/SudokuPad/sudokutools)
 - [SudokuPad Puzzle Importer](https://sudokupad.app/demo/puzzleimporter.html)
 - [SudokuBench Repository](https://github.com/SakanaAI/Sudoku-Bench)
-
+- [Google Spreadsheet for SudokuMaker Templates and Constraints](https://docs.google.com/spreadsheets/d/1C5rQaYlDJb3HVzHJSp5UibgM9uo57fwRdxgUOl8t7nA/)
