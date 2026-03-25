@@ -30,6 +30,34 @@ The puzzle object is accessible either via `puzzle` or via `sudoku` and provides
 | `puzzle.spec` | specification of the current grid puzzle |
 | `puzzle.state` | current state of the current grid puzzle |
 
+These functions are available:
+
+| Name | Description |
+|-|-|
+| `puzzle.addConstraintComponent(?)` |  |
+| `puzzle.getConstraintComponentsAt(?)` |  |
+| `puzzle.removeConstraintComponent(?)` |  |
+| `puzzle.setRegions(?)` |  |
+| `puzzle.getCellAt(?)` |  |
+| `puzzle.getCellsCanHaveRepeats(?)` |  |
+| `puzzle.getCellsDiagonallyAdjacentToCell(?)` |  |
+| `puzzle.getCellsDiagonallyAdjacentToCoords(?)` |  |
+| `puzzle.getCellsOrthogonallyAdjacentToCell(?)` |  |
+| `puzzle.getCellsOrthogonallyAdjacentToCoords(?)` |  |
+| `puzzle.getCellsSeeEachOther(?)` |  |
+| `puzzle.getCellsSeenByCell(?)` |  |
+| `puzzle.getColumn(?)` |  |
+| `puzzle.getFriendlyDigitsForCell(?)` |  |
+| `puzzle.getRegion(?)` |  |
+| `puzzle.getRegionAt(?)` |  |
+| `puzzle.getRegionCells(?)` |  |
+| `puzzle.getRegions(?)` |  |
+| `puzzle.getRow(?)` |  |
+| `puzzle.getX(?)` |  |
+| `puzzle.getY(?)` |  |
+| `puzzle.hasRegions(?)` |  |
+| `puzzle.unsafeGetCellAt(?)` |  |
+
 ## Helpers
 ### Naming
 
@@ -99,15 +127,55 @@ The puzzle object is accessible either via `puzzle` or via `sudoku` and provides
 | `helpers.geometry.getOrthogonallyAdjacentCells(?)` |  |
 
 ## Specification
-(TODO)
 
-## State
-(TODO)
+| Name | Description |
+|-|-|
+| `puzzle.spec.digitCount` | number of digits used in the puzzle |
+| `puzzle.spec.maxDigit` | highest digit used in the puzzle |
+| `puzzle.spec.minDigit` | lowest digit used in the puzzle |
+| `puzzle.spec.size.height` | total height of the grid (number of cells) |
+| `puzzle.spec.size.width` | total width of the grid (number of cells) |
+| `puzzle.spec.type` | `sudoku` or `custom` |
+
+## DigitSet and SudokuDigitSet
+
+| Name | Description |
+|-|-|
+| `DigitSet.from(digits: array)` | Converts an array of numbers (puzzle digits) to a DigitSet |
+| `DigitSet.length` |  |
+| `DigitSet.name` |  |
+| `DigitSet.bind(?)` |  |
+| `DigitSet.call(?)` |  |
+| `DigitSet.intersect(digit_set: DigitSet)` |  |
+| `DigitSet.subtract(digit_set: DigitSet)` |  |
+| `DigitSet.union(digit_set: DigitSet)` |  |
+| `DigitSet.has(digit: number)` |  |
 
 ## Custom constraints
+Custom constraints consist of a main code segment and one code segment per custom constraint component.
+The main segment contains code for preparing the logic and setting up the necessary components.
 
-(TODO)
+A custom constraint can be global, i. e. it is valid across the entire grid,
+or local, i. e. the author defines groups of cells for which the constraint is supposed to hold.
+Groups are accessed through `input.groups` which is an array of group objects.
+Each group object has the following attributes:
+
+| Name | Description |
+|-|-|
+| `value` | The string given in the value field of the group |
+| `cells` | The array of cell IDs in order |
 
 ## Custom constraint components
+Custom constraint components are optional. They contain the actual constraint logic and are evaluated during solver execution.
+
+The following functions can be defined in order to establish the logic of a custom constraint:
+
+| Name | Description |
+|-|-|
+| `getAffectedCells(param1, param2, ...)` |  |
+| `setParams(instance, param1, param2, ...)` |  |
+| `initialize(instance, puzzle): Generator<Change>` |  |
+| `validate(instance, puzzle): boolean` |  |
+| `update(instance, puzzle): Generator<Change>` |  |
 
 (TODO)
