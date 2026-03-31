@@ -34,11 +34,11 @@ These functions are available:
 
 | Name | Description |
 |-|-|
-| `puzzle.addConstraintComponent(?)` |  |
-| `puzzle.getConstraintComponentsAt(?)` |  |
-| `puzzle.removeConstraintComponent(?)` |  |
-| `puzzle.setRegions(?)` |  |
-| `puzzle.getCellAt(?)` |  |
+| `puzzle.addConstraintComponent(component)` | Adds a new instance of a constraint component to the puzzle |
+| `puzzle.getConstraintComponentsAt(cell_id: number): Set` | Returns a `Set` of constraint components applied to the given cell ID. Each element is an object with properties specific to the used constraint, however, the `name` attribute always seems to exist. |
+| `puzzle.removeConstraintComponent(?)` | (TODO) |
+| `puzzle.setRegions(?)` | (TODO) |
+| `puzzle.getCellAt(column_id: number, row_id: number): number` | Returns the ID of the cell identified by the 0-based coordinates given for row and column |
 | `puzzle.getCellsCanHaveRepeats(?)` |  |
 | `puzzle.getCellsDiagonallyAdjacentToCell(?)` |  |
 | `puzzle.getCellsDiagonallyAdjacentToCoords(?)` |  |
