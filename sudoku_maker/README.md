@@ -178,3 +178,57 @@ The following functions can be defined in order to establish the logic of a cust
 | `update(instance, puzzle): Generator<Change>` | (TODO) |
 
 (TODO)
+
+## Standard constraint components
+
+The following table contains the documentation of standard constraint components as shown in the Constraint Maker,
+if available and may continue additional information from experiments.
+
+| Name | Description |
+|-|-|
+| `AsymmetricalPairComponent(name: string, filterOrMapping: ((d1: number, d2: number) => boolean) \| DigitSet[], cell1: CellId, cell2: CellId)` | see `PairComponent` |
+| `BetweenComponent(name: string, endPoints: [CellId, CellId], midPoints: CellId[])` | The digits on all `midPoints` must be between the digits on the `endPoints`. |
+| `ConsecutiveDigitsComponent(name: string, cells: CellId[])` | All digits within `cells` must make a set of consecutive digits, but may repeat as well. |
+| `ConsecutiveDigitsSetComponent(name: string, cells: CellId[])` | All digits within `cells` must make a set of consecutive digits, without repeats. |
+| `CountDigitComponent(name: string, digit: number, counterCell: CellId, targetCells: CellId[])` | The digit in `counterCell` must equal the amount of occurrences of `digit` in `targetCells` |
+| `CountDigitsComponent(name: string, digits: DigitSet, counterCell: CellId, targetCells: CellId[])` | The digit in `counterCell` must equal the amount of occurrences of digits from `digits`. |
+| `DifferenceComponent(name: string, difference: number \| number[], cell1: CellId, cell2: CellId)` | The difference between the values at `cell1` and `cell2` must be exactly `difference`. |
+| `DifferentCombinationsComponent(name: string, cellGroups: CellId[][])` | Every group of cells of `cellGroups` must have a distinct make-up of digits. |
+| `DifferentDigitsComponent(name: string, cells: CellId[])` | Every cell of `cells` must have a different digit from the rest. |
+| `DifferentGroupsComponent(name: string, groups: DigitSet[], cells: CellId[])` | Every cell of `cells` must have a digit from a different group from `groups`. E.g. if one group is 123, and one cell has a 1, the other cells cannot be 2 or 3. **Note**: currently only works properly when the groups do not overlap. |
+| `DiverseGroupsComponent(name: string, groups: DigitSet[], cells: CellId[])` | A digit from every group from `groups` must appear at least once in `cells`, or from different groups if there are less cells than there are groups. Note: currently only works properly when the groups do not overlap. |
+| `ExactDigitCountComponent(name: string, value: number, count: number, cells: CellId[])` | The digit `value` must appear exactly `count` times in `cells`. |
+| `ForbiddenCandidatesComponent(name: string, candidates: DigitSet, cellOrCells: CellId \| CellId[])` | The value of `cellOrCells` cannot be any of `candidates`. |
+| `GreaterThanComponent(name: string, lesserCell: CellId, greaterCell: CellId)` | The digit in `lesserCell` must be less than the one in `greaterCell`. Aliases: LessThanComponent |
+| `GreaterThanOrEqualsComponent(name: string, lesserCell: CellId, greaterCell: CellId)` | The digit in `greaterCell` must be greater than or equal to the one in `lesserCell` |
+| `HouseComponent(name: string, cells: CellId[])` | Every digit must appear exactly once in `cells`. |
+| `IndexComponent(name: string, valueToIndex: number, indexerCell: CellId, cells: CellId[])` | The value of `indexerCell` must be the (1-based) index of an appearance of `valueToIndex` in the sequence of cells `cells`. |
+| `LessThanComponent(name: string, lesserCell: CellId, greaterCell: CellId)` | See `GreaterThanComponent` |
+| `MaxDigitCountComponent(name: string, value: number, maxCount: number, cells: CellId[])` | The digit `value` must appear at most `maxCount` times in `cells`. |
+| `MaximumDifferenceComponent(name: string, maxDifference: number, cell1: CellId, cell2: CellId)` | The difference between the values of `cell1` and `cell2` must be at most `maxDifference`. |
+| `MinimumDifferenceComponent(name: string, minDifference: number, cell1: CellId, cell2: CellId)` | The difference between the values of `cell1` and `cell2` must be at least `minDifference`. |
+| `NegativeBetweenComponent(name: string, endPoints: [CellId, CellId], midPoints: CellId[])` | The digits on all `midPoints` must not be between the digits on the `endPoints`. |
+| `NegativeDifferenceComponent(name: string, differences: number[], cell1: CellId, cell2: CellId)` | The difference between the values of `cell1` and `cell2` must not be any of `differences`. |
+| `NegativeIndexComponent(name: string, valueToNotIndex: number, indexerCell: CellId, cells: CellId[])` | The value of `indexerCell` must not be the (1-based) index of `valueToNotIndex` in the sequence of cells `cells`. |
+| `NegativeRatioComponent(name: string, ratios: number[], cell1: CellId, cell2: CellId)` | The ratio of the values of `cell1` and `cell2` (either way) must not be any of `ratios`. |
+| `NegativeSumComponent(name: string, sums: number[], cells: CellId[])` | The digits within `cells` must not sum to any of `sums`. |
+| `PairComponent(name: string, filterOrMapping: ((d1: number, d2: number) => boolean) \| DigitSet[], cell1: CellId, cell2: CellId)` | The digits `digit1` and `digit2` in `cell1` and `cell2` are valid when `filterOrMapping(digit1, digit2)` evaluates to `true`, or when `filterOrMapping[digit1].has(digit2)`. Aliases: AsymmetricalPairComponent |
+| `PredefinedCandidatesComponent(name: string, candidates: DigitSet, cellOrCells: CellId[])` | The value of `cellOrCells` must be one of `candidates`. |
+| `ProductComponent(name: string, productOrProducts: number \| number[], cells: CellId[])` | The product of the digits in `cells` must equal to `productOrProducts`. |
+| `RatioComponent(name: string, ratioOrRatios: number \| number[], cell1: CellId, cell2: CellId)` | The ratio of the values of `cell1` and `cell2` (either way) must equal `ratioOrRatios`. |
+| `RequiredDigitsComponent(name: string, values: number[], cells: CellId[])` | Every digit of `values` must be assigned a unique cell of `cells`. Requiring a digit to repeat can be achieved by repeating that digit in `values`. |
+| `RequiredGroupsComponent(name: string, groups: DigitSet[], cells: CellId[])` | For every group from `groups`, a digit must appear at least once in `cells`. E.g. If the groups are 123, 456 and 789, then `cells` must be at least 3 cells, and one digit of every group is assigned to a cell. Note: currently only works properly when the groups do not overlap. |
+| `SameDigitComponent(name: string, cells: CellId[])` | Every cell of `cells` must have the same value. |
+| `SameGroupComponent(name: string, groups: DigitSet[], cells: CellId[])` | Every cell of `cells` must have a digit from the same group within `groups`. E.g. if the groups are the evens and the odds, then either every cell is even, or every cell is odd. 
+Note: currently only works properly when the groups do not overlap. |
+| `SameSumComponent(name: string, groups: { name: string, cells: CellId[], weights?: Map<CellId, number>, asNumber?: boolean }[])` | Every group of cells from `groups` must sum to the same value. Set `asNumber` to true, to interpret that group as a sequence that spells out a number (e.g. for arrows), where the least significant digit is at index 0. Use `weights` to set a custom weight for specific cells (see `WeightedSumComponent` for details) |
+| `SandwichSumComponent(name: string, sum: number, sandwichDigits: [number, number], cells: CellId[])` | Along `cells` there must be a sequence of values starting with one of `sandwichDigits`, then some values summing to `sum`, then another digit from `sandwichDigits`. Note: currently requires all cells to be different. |
+| `SequenceComponent(name: string, cells: CellId[])` | Digits along `cells` must increase or decrease by the same amount (or stay the same) |
+| `SkyscraperComponent(name: string, amount: number, cells: CellId[])` | Digits along `cells` represent skyscrapers, blocking cells further along the sequence. The amount of skyscrapers seen from the start must equal `amount`. |
+| `SumComponent(name: string, sumOrSums: number \| number[], cells: CellId[])` | The digits in `cells` must sum to (one of) `sumOrSums`. If a cell appears N times in `cells`, the value in that cell is counted N times. |
+| `WeakLinkComponent(name: string, cell1: CellId, value1: number, cell2: CellId, value2: number)` | If `cell1` is set to `value1`, `cell2` must not be `value2`. Similarly, if `cell2` is set to `value2`, `cell1` cannot be `value1`. |
+| `WeakLinksComponent(name: string, cells1: CellId \| CellId[], value1: DigitSet, cells2: CellId \| CellId[], value2: DigitSet)` | If any of `cells1` is set to one of `values1`, all of `cells2` cannot be any of `values2`. Similarly, if any of `cells2` is set to one of `values2`, all of `cells1` cannot be any of `values1`. |
+| `WeightedSumComponent(name: string, sumOrSums: number \| number[], cellWeightMapping: Map<CellId, number>)` | The sums of every value of cell X in `cellWeightMapping`, multiplied by `cellWeightMapping.get(X)`, must sum to (one of) `sumOrSums`. Note: Currently only supports positive weights. To avoid floating point inaccuracies breaking this component, use whole numbers as weights. In case you want to do something like x+y/3=5, multiply it all such that you get 3x+y=15 |
+| `XSumComponent(name: string, sum: number, xCell: CellId, cells: CellId[])` | The first X digits along `cells` must sum to `sum`, where X is the value of `xCell`. |
+
+(TODO)
