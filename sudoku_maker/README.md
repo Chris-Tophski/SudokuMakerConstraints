@@ -63,19 +63,18 @@ These functions are available:
 
 | Name | Description |
 |-|-|
-| `helpers.naming.getCellName(cell_id: number)` | Converts a cell ID to a cell name with row and column, starting at `R1C1` in the top left corner |
-| `helpers.naming.getBranchingLineName(line_name: string, cell_ids: ?)` | (TODO) |
-| `helpers.naming.getCageName(cage_name: string, cell_ids: ?)` | (TODO) |
-| `helpers.naming.getCellName(?)` | (TODO) |
-| `helpers.naming.getCellsDescription(?)` | (TODO) |
-| `helpers.naming.getColumnName(?)` | (TODO) |
+| `helpers.naming.getCellName(cell_id: number): string` | Converts a cell ID to a cell name with row and column, starting at `R1C1` in the top left corner |
+| `helpers.naming.getBranchingLineName(line_name: string, cell_ids: array): string` | Builds a name for a line and a cell on it, using the pattern "the <LINE_NAME> containing <CELL_NAME>". Note that only the first cell ID is used and that using a number instead of an array throws an error. |
+| `helpers.naming.getCageName(cage_name: string, cell_ids: array): string` | Builds a name for a cage and a cell in it, using the pattern "the <CAGE_NAME> at <CELL_NAME>". Note that only the first cell ID is used and that using a number instead of an array throws an error. |
+| `helpers.naming.getCellsDescription(cell_ids: array): string` | Builds a cell name list based on the given array of cell IDs. An empty array results in `???`, an array with a single item results in its name as returned by `getCellName()`, and longer arrays return in a comma-separated list of cell names, where the last 2 cell names are separated by "and", e. g. "R1C1, R2C2 and R3C3". |
+| `helpers.naming.getColumnName(column_id: number): string` | Builds a 1-based column name from a given 0-based column ID like "C1". Note that neither lower nor upper bounds of puzzle size are checked, such that this can result in column names like "C-9". |
 | `helpers.naming.getDigitFilterDescription(?)` | (TODO) |
 | `helpers.naming.getDigitSetDescription(?)` | (TODO) |
 | `helpers.naming.getEdgeClueName(?)` | (TODO) |
 | `helpers.naming.getEdgeClueNameFromDomino(?)` | (TODO) |
 | `helpers.naming.getLineName(?)` | (TODO) |
 | `helpers.naming.getOuterClueName(?)` | (TODO) |
-| `helpers.naming.getRowName(?)` | (TODO) |
+| `helpers.naming.getRowName(row_id: number): string` | Builds a 1-based row name from a given 0-based row ID like "R1". Note that neither lower nor upper bounds of puzzle size are checked, such that this can result in row names like "R-9". |
 | `helpers.naming.getTupleName(?)` | (TODO) |
 | `helpers.naming.getTupleNameBySize(?)` | (TODO) |
 
@@ -83,14 +82,14 @@ These functions are available:
 
 | Name | Description |
 |-|-|
-| `helpers.digits.allDigitsMask` | (TODO) |
-| `helpers.digits.maxDigit` | (TODO) |
-| `helpers.digits.minDigit` | (TODO) |
-| `helpers.digits.createEvensDigitSet(?)` | (TODO) |
+| `helpers.digits.allDigitsMask` | A number, whose binary representation has a `1` for each available digit of the puzzle. E. g. the Sudoku digits from `1` to `9` result in the mask `1022` decimal, which is binary `1111111110`. |
+| `helpers.digits.maxDigit` | The highest of the available digits of the puzzle |
+| `helpers.digits.minDigit` | The lowest of the available digits of the puzzle |
+| `helpers.digits.createEvensDigitSet(): DigitSet` | Returns a `DigitSet` with all the even digits available in the puzzle. |
 | `helpers.digits.createFilteredDigitSet(?)` | (TODO) |
-| `helpers.digits.createFullDigitSet(?)` | (TODO) |
+| `helpers.digits.createFullDigitSet(): DigitSet` | Returns a `DigitSet` witt all available digits in the puzzle, i. e. based on the `allDigitsMask` |
 | `helpers.digits.createModuloDigitSet(?)` | (TODO) |
-| `helpers.digits.createOddsDigitSet(?)` | (TODO) |
+| `helpers.digits.createOddsDigitSet(): DigitSet` | Returns a `DigitSet` with all the odd digits available in the puzzle. |
 
 ### Lines
 
@@ -141,15 +140,15 @@ These functions are available:
 
 | Name | Description |
 |-|-|
-| `DigitSet.from(digits: array)` | Converts an array of numbers (puzzle digits) to a DigitSet |
-| `DigitSet.length` | (TODO) |
-| `DigitSet.name` | (TODO) |
+| `DigitSet.from(digits: array): DigitSet` | Converts an array of numbers (puzzle digits) to a DigitSet |
+| `DigitSet.length: number` | (TODO) |
+| `DigitSet.name: string` | (TODO) |
 | `DigitSet.bind(?)` | (TODO) |
 | `DigitSet.call(?)` | (TODO) |
-| `DigitSet.intersect(digit_set: DigitSet)` | (TODO) |
-| `DigitSet.subtract(digit_set: DigitSet)` | (TODO) |
-| `DigitSet.union(digit_set: DigitSet)` | (TODO) |
-| `DigitSet.has(digit: number)` | (TODO) |
+| `DigitSet.intersect(digit_set: DigitSet): DigitSet` | (TODO) |
+| `DigitSet.subtract(digit_set: DigitSet): DigitSet` | (TODO) |
+| `DigitSet.union(digit_set: DigitSet): DigitSet` | (TODO) |
+| `DigitSet.has(digit: number): boolean` | (TODO) |
 
 ## Custom constraints
 Custom constraints consist of a main code segment and one code segment per custom constraint component.
