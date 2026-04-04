@@ -35,10 +35,12 @@ These functions are available:
 | Name | Description |
 |-|-|
 | `puzzle.addConstraintComponent(component)` | Adds a new instance of a constraint component to the puzzle |
-| `puzzle.getConstraintComponentsAt(cell_id: number): Set` | Returns a `Set` of constraint components applied to the given cell ID. Each element is an object with properties specific to the used constraint, however, the `name` attribute always seems to exist. Note that only those constraint components are returned that are defined before the custom constraint. |
-| `puzzle.removeConstraintComponent(?)` | (TODO) |
-| `puzzle.setRegions(?)` | (TODO) |
+| `puzzle.filterCandidatesInCell(?)` | (TODO) |
+| `puzzle.filterCandidatesInCells(?)` | (TODO) |
+| `puzzle.getCandidates(?)` | (TODO) |
+| `puzzle.getCandidatesBitMask(?)` | (TODO) |
 | `puzzle.getCellAt(column_id: number, row_id: number): number` | Returns the ID of the cell identified by the 0-based coordinates given for row and column |
+| `puzzle.getCellsAreFilled(?)` | (TODO) |
 | `puzzle.getCellsCanHaveRepeats(cell_ids: array): boolean` | Returns `true` if cells identified by their ID can have repeated digits (based on the constraints), `false` otherwise. Note that only those constraint components are evaluated that are defined before the custom constraint. |
 | `puzzle.getCellsDiagonallyAdjacentToCell(cell_id: number): Generator<number>` | Yields IDs of cells diagonally adjacent to the cell identified by the given cell ID. Note that the algorithm does not check upper bounds based on the puzzle size, only IDs lower than 0 are not yielded. |
 | `puzzle.getCellsDiagonallyAdjacentToCoords(column_id: number, row_id: number): Generator<number>` | Yields IDs of cells diagonally adjacent to the cell identified by the given 0-based coordinates. Note that the algorithm does not check bounds based on the puzzle size, only IDs lower than 0 are not yielded. |
@@ -47,15 +49,28 @@ These functions are available:
 | `puzzle.getCellsSeeEachOther(cell_ids: array): boolean` | Returns `true` if cells identified by their ID see each other (i. e. must contain different digits based on the constraints), `false` otherwise. Note that only those constraint components are evaluated that are defined before the custom constraint. |
 | `puzzle.getCellsSeenByCell(cell_id: number): Set` | Returns a set of cell IDs seen by the cell identified by the given ID (i. e. all of them must contain a digit different to the digit in the given cell, based on the constraints). Note that only those constraint components are evaluated that are defined before the custom constraint. |
 | `puzzle.getColumn(cell_id: number): number` | Returns the 0-based column ID of the cell identified by the given cell ID. Note that the algorithm does not check the upper bounds based on the puzzle size, only for negative cell IDs `-1` is returned. |
+| `puzzle.getConstraintComponentsAt(cell_id: number): Set` | Returns a `Set` of constraint components applied to the given cell ID. Each element is an object with properties specific to the used constraint, however, the `name` attribute always seems to exist. Note that only those constraint components are returned that are defined before the custom constraint. |
+| `puzzle.getFriendlyCandidates(?)` | (TODO) |
 | `puzzle.getFriendlyDigitsForCell(cell_id: number): DigitSet` | Returns a `DigitSet` of friendly digits for the cell identified by the given ID. Depending on the involved constraints, the 1-based indizes of row, column and region of the cell are collected into the set. However, row and column seem to be evaluated for this purpose, no matter if a "Rows and columns" constraints is active or not. |
 | `puzzle.getRegion(cell_id: number): number` | Returns the 0-based ID of the region containing the cell identified by the given ID. Cell IDs out of bounds result in `-1`. |
 | `puzzle.getRegionAt(column_id: number, row_id: number): number` | Returns the 0-based ID of the region containing the cell identified by the given 0-based coordinates. |
 | `puzzle.getRegionCells(region_id: number): array` | Returns an array of IDs of cells contained within the region identified by the given 0-based region ID. Region IDs out of bounds return `undefined`. |
 | `puzzle.getRegions(): array` | Returns an array of arrays of cell IDs, such that the first level contains the regions and the second level contains all the cell IDs for that region. |
 | `puzzle.getRow(cell_id: number): number` | Returns the 0-based row ID of the cell identified by the given cell ID. Note that the algorithm does not check the upper bounds based on the puzzle size, only for negative cell IDs `-1` is returned. |
+| `puzzle.getValue(?)` | (TODO) |
+| `puzzle.hasValue(?)` | (TODO) |
 | `puzzle.getX(cell_id: number): number` | Returns the 0-based column ID for the given cell ID |
 | `puzzle.getY(cell_id: number): number` | Returns the 0-based row ID for the given cell ID |
 | `puzzle.hasRegions(): boolean` | Returns `true` if the puzzle includes a constraints defining regions of some sort, `false` otherwise. Note that this function does not depend on the order of constraints, i. e. it seems to be correctly evaluated, even if the regions constraint is located after the custom constraint. |
+| `puzzle.removeCandidateFromCell(?)` | (TODO) |
+| `puzzle.removeCandidateFromCells(?)` | (TODO) |
+| `puzzle.removeCandidatesFromCell(?)` | (TODO) |
+| `puzzle.removeCandidatesFromCells(?)` | (TODO) |
+| `puzzle.removeComponent(?)` | (TODO) |
+| `puzzle.removeConstraintComponent(?)` | (TODO) |
+| `puzzle.replaceComponent(?)` | (TODO) |
+| `puzzle.setRegions(?)` | (TODO) |
+| `puzzle.stop(message: string): Change` | (TODO) |
 | `puzzle.unsafeGetCellAt(?)` | (TODO) |
 
 ## Helpers
