@@ -1,5 +1,6 @@
 # Parity Inversion
 > TODO: rework naming: "Rings and Diamonds"
+
 > TODO: finish code
 
 ## Core Rules
