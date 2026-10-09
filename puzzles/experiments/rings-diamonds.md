@@ -25,6 +25,18 @@ See [Rings and Diamonds rules](/constraints/rings-diamonds).
 - [SudokuMaker](https://sudokumaker.app/?puzzle=DtVdNk5s4EP0rVOfa4-gLsLmlcswxqexh1gdiy4NqQDhIJOtM-b9vSXjAI5lKJsXgS7_m1VPrNbTRExzarintV9kZ1WoogK6yFQGEY__rVy2heAJdNhIKAISyt1XbQQEfq06ZL-2xMo8KEHZt00htoYC75PP3Xplq3z72_-q75IO26u6TVg-VdXCvyqbVe_N-p7pdLU3yU9kqaY_H1igr35uykcmx7JQ9JUonpu-6ttd7pR-Snaxrg4lubaLlThpTdqo-JWVdJw_qh9SAYE9HV-euN7ZtAOGn2tsKihyhkq4AH3odKO6f4EdZ9xIK4cqv285AkYkzjnk-5a_Tm9vpbEYlv01fz9DZTP6N5eltmfR2esaZxcUpu8qLVzqzeVXtC6mvX9emGWfeVHyuS_y3XXrRjsXV_8T1uS7NOfPG8jN9Cq0ZxlNhu17izZ5tHdDGdqXSdphNwyhjhHCnMCAyhYwQglArLR39_gn-g4KtUoTThXaNV2mQoSGOGCzEEYOHOGKIEEeMCEeMLMQRIz9vcdg_CVYh0bo0xHFlM5VOGR7iiCFmMxGOGFmII8a03zxYJYvWzQKcvqJWEeCpv2MmwNMzEuGIkYU4YuQjftlfFvWXBf29wvHTO_M0s6C_VzhiiBDHjOAtEtF7NmYCPL2rY-a83SIYexo-xWyldo9aGuO4z8MWCni3zv1vA-dpSnCSTt87BHOkAmmKa6S4QZohu1YelcjlAoT2cDDSuqXonCwbpGiOlCBHgZQiXS8gfFFCukHKMMUMKUdGFlAeXHD758gYMopsjWyDfAlxTpzs4AgTyClyhixdxpNnKWcKI8hyZBlyjlws0cmLCchz5BnyFAVDwVEsIS6ElyUXQ_gG-RpFiiJbQjzzgmywAgVFQVDkKP7Sc-pH2-XUczmojMcLRghDOJZd2Vz_VYOsa3U0EhA6P5wEQuffaIFQ6gdXA0E4qLp2NRz85Wswtmsf5VTYmPpnOL6QFWHuE8Gcmm-t3--9G5dklW7RR9RH6Yso9REdeW5Ych-5kZf5yI22geeGDRvvumh75cDzme23FnRyZ4etjmcvssqm05cHFy84TW_s86YbkWd_4MbL_Q6Ru-ui7Xl7Pv8P)
 - [SudokuPad](https://sudokupad.app/965d9fipg4)
 
+### Experiment 1D (Squishdoku)
+- [SudokuMaker]()
+- [SudokuPad]()
+
+### Experiment 1E (Squishdoku)
+- [SudokuMaker]()
+- [SudokuPad]()
+
+### Experiment 1F (Squishdoku)
+- [SudokuMaker]()
+- [SudokuPad]()
+
 ## On Polarity
 
 ### Experiment 2A
